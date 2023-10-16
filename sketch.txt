@@ -1,0 +1,31 @@
+-- MY PORTFOLIO WEBSITE'S NOTES AND SKETCH --
+
+tutorials:
+
+https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios
+https://www.forbes.com/advisor/education/build-a-coding-portfolio/
+https://www.bestcolleges.com/bootcamps/guides/how-to-build-coding-portfolio/
+
+templates/inspiration:
+
+https://webflow.com/templates/html/developer-x-portfolio-website-template?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Global&utm_term=aud-519773332254:dsa-1729073410708___617245336969__&gclid=CjwKCAjwvrOpBhBdEiwAR58-3MC8RobUWMsh86R7iRWBilfUEv1veCxSn3Q0jMkn4q8l-LN4EZ_ICBoCjJMQAvD_BwE
+https://javascript.plainenglish.io/40-portfolio-templates-free-for-web-design-d0611a372763
+
+- - - - - - - - -
+
+website:
+
+- home
+- about
+- projects/portfolio
+- blog
+- contact
+
+include:
+
+my photo
+social media profiles (github, linkedin, twitter)
+link for downloading my resumé
+4-10 projects with description, programming languages used, link to github repo and demo
+
+* highlight sections in the header as I scroll through them
