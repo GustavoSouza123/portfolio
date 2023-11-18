@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -107,9 +108,12 @@ header nav ul li a:hover {
 }
 
 header nav.mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 350px;
     height: calc(100vh - 50px);
+    background-color: #fff;
     border-left: 1px solid #eee;
     position: absolute;
     top: 50px;
@@ -118,11 +122,11 @@ header nav.mobile {
 }
 
 header nav.mobile ul {
+    height: 50%;
     flex-direction: column;
 }
 
 header nav.mobile ul li {
-    background-color: #fff;
 }
 
 header nav.mobile ul li a {
@@ -134,11 +138,12 @@ header nav.mobile ul li a {
 main {
     min-height: calc(100vh - 50px);
     padding: 30px 3%;
+    transition: .2s;
 }
 
 /* responsiveness */
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 670px) {
     header nav {
         display: none;
     }
