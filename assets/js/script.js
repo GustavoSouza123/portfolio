@@ -4,15 +4,15 @@ $(function() {
     function openNav() {
         $('main').css('background', 'rgba(0,0,0,.5)');
         $('header nav').toggleClass('mobile');
-        $('header nav').animate({ right: '0' }, 300);
+        $('header nav').fadeIn(200);
     }
 
     function closeNav() {
         $('main').css('background', '#fff');
-        $('header nav').animate({ right: '-350px' }, 300);
+        $('header nav').fadeOut(200);
         setTimeout(function() {
             $('header nav').toggleClass('mobile');
-        }, 300);
+        }, 200);
 
     }
 
