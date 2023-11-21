@@ -9,7 +9,7 @@
             <li><a class="active" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
-            <li><a href="../blog/">Blog</a></li>
+            <li><a href="<?php echo INCLUDE_PATH_BLOG; ?>">Blog</a></li>
             <li><a href="">Contact</a></li>
         </ul>
     </nav> 
