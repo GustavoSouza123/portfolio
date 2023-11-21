@@ -1,5 +1,16 @@
 /* portfolio header styles */
 
+.background {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
 header {
     width: 100%;
     height: 50px;
@@ -121,4 +132,16 @@ header nav.mobile ul {
 
 header nav.mobile ul li a {
     border-radius: 0;
+}
+
+/* header responsiveness */
+
+@media only screen and (max-width: 670px) {
+    header nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
