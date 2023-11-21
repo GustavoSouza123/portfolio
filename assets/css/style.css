@@ -134,8 +134,12 @@ header nav.mobile ul li a {
 
 main {
     min-height: calc(100dvh - 50px);
-    padding: 30px 3%;
+    /* padding: 30px 3%; */
     transition: .2s;
+}
+
+h1.h1 {
+    margin: 30px 3%;
 }
 
 /* responsiveness */
