@@ -11,6 +11,9 @@ templates/inspiration:
 https://webflow.com/templates/html/developer-x-portfolio-website-template?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Global&utm_term=aud-519773332254:dsa-1729073410708___617245336969__&gclid=CjwKCAjwvrOpBhBdEiwAR58-3MC8RobUWMsh86R7iRWBilfUEv1veCxSn3Q0jMkn4q8l-LN4EZ_ICBoCjJMQAvD_BwE
 https://javascript.plainenglish.io/40-portfolio-templates-free-for-web-design-d0611a372763
 
+portfolio templates:
+https://javascript.plainenglish.io/40-portfolio-templates-free-for-web-design-d0611a372763
+
 - - - - - - - - -
 
 website:
