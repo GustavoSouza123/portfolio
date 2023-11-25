@@ -45,24 +45,13 @@ $(function() {
         }
     })
 
-    // nav links
-    /*$('header nav a').click(function() {
-        let href = $(this).attr('href');
-        if(href.includes('blog')) {
-            $.ajax({
-                timeout: 10000,
-                url: href,
-                method: 'get'
-            }).done(function(data) {
-                $('main').html(data);
-            }).fail(function(jqXHR) {
-                $('main').html(jqXHR.status+': '+jqXHR.statusText);
-            }).always(function() {
-                window.history.pushState('Blog', 'Blog', "blog/");
-                // console.log('Request complete');
-            });
+    // change header styles when scrolling
+    $(window).on('scroll', function() {
+        let scroll = $(window).scrollTop();
+        if(scroll > 50) {
+            $('header').addClass('scroll');
+        } else if(scroll < 20) {
+            $('header').removeClass('scroll');
         }
-
-        return false;
-    })*/
+    })
 })
