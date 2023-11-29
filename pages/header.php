@@ -7,11 +7,11 @@
         </div>
         <nav>
             <ul>
-                <li><a class="active" href="<?= INCLUDE_PATH; ?>">Início</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="<?= INCLUDE_PATH_BLOG; ?>">Blog</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a class="active" href="<?= INCLUDE_PATH; ?>"><?= $content->nav1 ?></a></li>
+                <li><a href=""><?= $content->nav2 ?></a></li>
+                <li><a href=""><?= $content->nav3 ?></a></li>
+                <li><a href="<?= INCLUDE_PATH_BLOG; ?>"><?= $content->nav4 ?></a></li>
+                <li><a href=""><?= $content->nav5 ?></a></li>
             </ul>
         </nav> 
         <div class="menu-toggle">
