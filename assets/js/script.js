@@ -1,18 +1,29 @@
 $(function() {
     // mobile nav
+    let scroll = 0;
+
     function openNav() {
-        $('.background').fadeIn(200);
         $('header nav').toggleClass('mobile');
-        $('header nav').fadeIn(200);
+        $('header nav').css('display', 'flex').hide().fadeIn(200);
+        if($(document).height() > $(window).height()) {
+            scroll = $(window).scrollTop();
+            setTimeout(function() {
+                $('body').css('position', 'fixed');
+                $('body').css('overflow-y', 'scroll');
+            }, 200)
+        }
     }
 
     function closeNav() {
-        $('.background').fadeOut(200);
         $('header nav').fadeOut(200);
+        if($(document).height() > $(window).height()) {
+            $('html, body').animate({ scrollTop: scroll }, 0);
+            $('body').css('position', 'static');
+            $('body').css('overflow-y', 'auto');
+        }
         setTimeout(function() {
             $('header nav').toggleClass('mobile');
         }, 200);
-
     }
 
     var isNavOpen = false;
