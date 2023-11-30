@@ -2,7 +2,8 @@
     require 'config/config.php';
 
     // get website content 
-    $json = file_get_contents(INCLUDE_PATH.'json/english.json');
+    $activeLanguage = $_COOKIE['activeLanguage'];
+    $json = file_get_contents(INCLUDE_PATH.'json/'.$activeLanguage.'.json');
     $content = json_decode($_COOKIE['portfolioContent']);
     setcookie('portfolioContent', $json, time()+60*60*24, '/');
 ?>
@@ -23,10 +24,13 @@
 </head>
 <body>
     <?php include 'pages/header.php'; ?>
+
+    <!-- include path -->
+    <input type="hidden" name="include_path" value="<?= INCLUDE_PATH; ?>" />
     
     <main>
         <div class="content">
-                <h1><?= $content->construction ?></h1>
+            <h1><?= $content->construction ?></h1>
         </div>
     </main>
 

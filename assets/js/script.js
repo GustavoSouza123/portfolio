@@ -1,4 +1,7 @@
 $(function() {
+    // include path
+    const include_path = $('input[name="include_path"]').val();
+
     // mobile nav
     let scroll = 0;
 
@@ -64,5 +67,23 @@ $(function() {
         } else if(scroll < 20) {
             $('header').removeClass('scroll');
         }
+    })
+
+    // languages
+    let activeLanguage = 'en';
+    $('header nav .languages > div').click(function() {
+        activeLanguage = $(this).attr('language'); 
+        $('header nav .languages > div').removeClass('active');
+        $(`div[language="${activeLanguage}"]`).addClass('active');
+        document.cookie = `activeLanguage=${activeLanguage}; expires=60*60*24; path=/`;
+
+        $.ajax({
+            url: include_path+`json/${activeLanguage}.json`,
+            method: 'post',
+            dataType: 'json'
+        }).done(function(data) {
+            document.cookie = `portfolioContent=${JSON.stringify(data)}; expires=60*60*24; path=/`;
+            location.reload();
+        });
     })
 })
