@@ -6,6 +6,12 @@
     $json = file_get_contents(INCLUDE_PATH.'json/'.$activeLanguage.'.json');
     $content = json_decode($_COOKIE['portfolioContent']);
     setcookie('portfolioContent', $json, time()+60*60*24, '/');
+
+    // strip accents from a string
+    function stripAccents($str){
+        $newStr = strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+        return strtolower($newStr);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +36,11 @@
     
     <main>
         <div class="content">
-            <h1><?= $content->construction ?></h1>
+            <section id="<?= stripAccents($content->nav1) ?>"></section>
+            <section id="<?= stripAccents($content->nav2) ?>"></section>
+            <section id="<?= stripAccents($content->nav3) ?>"></section>
+            <section id="<?= stripAccents($content->nav4) ?>"></section>
+            <section id="<?= stripAccents($content->nav5) ?>"></section>
         </div>
     </main>
 
