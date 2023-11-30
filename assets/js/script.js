@@ -6,24 +6,14 @@ $(function() {
     let scroll = 0;
 
     function openNav() {
+        $('.menu-toggle').toggleClass('active');
         $('header nav').toggleClass('mobile');
         $('header nav').css('display', 'flex').hide().fadeIn(200);
-        if($(document).height() > $(window).height()) {
-            scroll = $(window).scrollTop();
-            setTimeout(function() {
-                $('body').css('position', 'fixed');
-                $('body').css('overflow-y', 'scroll');
-            }, 200)
-        }
     }
 
     function closeNav() {
+        $('.menu-toggle').toggleClass('active');
         $('header nav').fadeOut(200);
-        if($(document).height() > $(window).height()) {
-            $('html, body').animate({ scrollTop: scroll }, 0);
-            $('body').css('position', 'static');
-            $('body').css('overflow-y', 'auto');
-        }
         setTimeout(function() {
             $('header nav').toggleClass('mobile');
         }, 200);
@@ -32,8 +22,6 @@ $(function() {
     var isNavOpen = false;
     $('.menu-toggle').click(function(e) {
         e.stopPropagation();
-        $(this).toggleClass('active');
-
         isNavOpen = (isNavOpen) ? false : true;
         if(isNavOpen) {
             openNav();
@@ -85,5 +73,41 @@ $(function() {
             document.cookie = `portfolioContent=${JSON.stringify(data)}; expires=60*60*24; path=/`;
             location.reload();
         });
+    })
+
+    // nav links
+    $('nav.portfolio a').click(function(e) {
+        e.preventDefault();
+        let anchor = $(this).attr('target');
+
+        $('html, body').animate({
+            scrollTop: $(anchor).offset().top-50
+        }, 500);
+        $('nav.portfolio a').removeClass('active');
+        $(this).addClass('active');
+
+        if($('nav').hasClass('mobile')) {
+            isNavOpen = (isNavOpen) ? false : true;
+            if(!isNavOpen) {
+                closeNav();
+            }
+       }
+
+    })
+
+    $(window).scroll(function() {
+        setTimeout(function() {
+            var windowOffY = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            $('section').each(function() {
+                var elOffY = $(this).offset().top;
+                if(elOffY + $(this).height()/2 < (windowOffY + windowHeight)) {
+                    var id = $(this).attr('id');
+                    $('nav.portfolio a').removeClass('active');
+                    $('nav.portfolio a[target="#'+id+'"]').addClass('active');
+                    return;
+                }
+            })
+        }, 10)
     })
 })

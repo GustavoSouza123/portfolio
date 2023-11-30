@@ -191,7 +191,7 @@ header nav.mobile ul li a {
 
 /* header responsiveness */
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 800px) {
     header nav {
         display: none;
     }

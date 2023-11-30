@@ -35,13 +35,41 @@
     <input type="hidden" name="include_path" value="<?= INCLUDE_PATH; ?>" />
     
     <main>
-        <div class="content">
-            <section id="<?= stripAccents($content->nav1) ?>"></section>
-            <section id="<?= stripAccents($content->nav2) ?>"></section>
-            <section id="<?= stripAccents($content->nav3) ?>"></section>
-            <section id="<?= stripAccents($content->nav4) ?>"></section>
-            <section id="<?= stripAccents($content->nav5) ?>"></section>
-        </div>
+        <section id="<?= stripAccents($content->nav1) ?>">
+            <div class="content">
+                <h1><?= $content->section1Title ?></h1>
+                <p class="subtitle"><?= $content->section1Subtitle ?></p>
+                <img src="<?= INCLUDE_PATH ?>assets/images/me.png" alt="My photo" />
+            </div>
+        </section>
+
+        <section id="<?= stripAccents($content->nav2) ?>">
+            <div class="content">
+                <h1><?= $content->section2Title ?></h1>
+
+            </div>
+        </section>
+
+        <section id="<?= stripAccents($content->nav3) ?>">
+            <div class="content">
+                <h1><?= $content->section3Title ?></h1>
+
+            </div>
+        </section>
+
+        <section id="<?= stripAccents($content->nav4) ?>">
+            <div class="content">
+                <h1><?= $content->section4Title ?></h1>
+                <a href="<?= INCLUDE_PATH_BLOG ?>"><?= $content->section4SeeAll ?></a>
+            </div>
+        </section>
+
+        <section id="<?= stripAccents($content->nav5) ?>">
+            <div class="content">
+                <h1><?= $content->section5Title ?></h1>
+
+            </div>
+        </section>
     </main>
 
     <?php include 'pages/footer.php'; ?>

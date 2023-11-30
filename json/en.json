@@ -5,5 +5,17 @@
     "nav4": "Blog",
     "nav5": "Contact",
     "blogTitle": "My Blog",
-    "construction": "Under construction!"
+    "construction": "Under construction!",
+
+    "section1Title": "Hey, I'm Gustavo Souza",
+    "section1Subtitle": "I'm a web developer and tech enthusiast with a deep passion for both human and programming languages.",
+
+    "section2Title": "About Me",
+
+    "section3Title": "My Projects",
+
+    "section4Title": "My Blog",
+    "section4SeeAll": "See all posts",
+
+    "section5Title": "Contact Me"
 }

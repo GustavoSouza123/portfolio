@@ -5,5 +5,17 @@
     "nav4": "Blog",
     "nav5": "Contato",
     "blogTitle": "Meu Blog",
-    "construction": "Em construção!"
+    "construction": "Em construção!",
+
+    "section1Title": "Olá, eu sou o Gustavo Souza",
+    "section1Subtitle": "Sou um desenvolvedor web e entusiasta de tecnologia com uma profunda paixão por linguagens humanas e de programação.",
+
+    "section2Title": "Sobre Mim",
+
+    "section3Title": "Meus Projetos",
+
+    "section4Title": "Meu Blog",
+    "section4SeeAll": "Ver todos os posts",
+
+    "section5Title": "Entre em Contato"
 }
