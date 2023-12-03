@@ -33,7 +33,12 @@
 
     <!-- include path -->
     <input type="hidden" name="include_path" value="<?= INCLUDE_PATH; ?>" />
-    
+
+    <!-- loading container -->
+    <div class="loading">
+        <img src="<?= INCLUDE_PATH ?>assets/images/loading-light.svg" alt="loading spinner" />
+    </div>
+
     <main>
         <section id="<?= stripAccents($content->nav1) ?>">
             <div class="content">

@@ -176,14 +176,15 @@ header nav.mobile .languages {
 
 /* nav ul */
 header nav.mobile ul {
-    width: 200px;
-    height: 50%;
+    width: auto;
+    height: auto;
     flex-direction: column;
     font-size: 18px;
 }
 
-header nav.mobile ul li a {
-    border-radius: 0;
+header nav.mobile ul li {
+    height: 40px;
+    margin: 5px 0;
 }
 
 /* header responsiveness */
