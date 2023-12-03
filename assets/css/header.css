@@ -110,10 +110,7 @@ header nav ul li a {
     padding-bottom: 3px;
 }
 
-header nav ul li a.active {
-    font-weight: 600;
-}
-
+header nav ul li a.active,
 header nav ul li a:hover {
     background-color: #eee;
 }
