@@ -60,6 +60,42 @@ $(function() {
         }
     })
 
+    // theme toggle
+    let themeToggle = $('.theme-toggle');
+    let theme = $('input[name="theme"]').val();
+
+    function lightTheme() {
+        $('html').removeClass('dark');
+        themeToggle.removeClass('active');
+        themeToggle.find('span').animate({ left: -5 }, 50, 'linear');
+    }
+
+    function darkTheme(animDelay) {
+        $('html').addClass('dark');
+        themeToggle.addClass('active');
+        themeToggle.find('span').animate({ left: themeToggle.width()-themeToggle.find('span').width()+5 }, animDelay, 'linear');
+    }
+
+    if(theme == 'dark') {
+        darkTheme(0);
+    }
+
+    themeToggle.click(function() {
+        theme = (theme == 'light') ? 'dark' : 'light';
+
+        if(theme == 'dark') {
+            darkTheme(50);
+        } else {
+            lightTheme();
+        }
+
+        $('header .social a img').eq(0).attr('src', `${include_path}assets/images/github-${theme}.svg`);
+        $('header .social a img').eq(1).attr('src', `${include_path}assets/images/linkedin-${theme}.svg`);
+        $('header .social a img').eq(2).attr('src', `${include_path}assets/images/twitter-${theme}.svg`);
+
+        document.cookie = `portfolioTheme=${theme}; expires=60*60*24; path=/`;
+    })
+
     // languages
     let activeLanguage = 'en';
     $('header nav .languages > div').click(function() {
@@ -112,5 +148,15 @@ $(function() {
                 }
             })
         }, 10)
+    })
+
+    // resizing verification
+    $(window).on('resize', function() {
+        let width = $(this).width();
+        if(width >= 800) {
+            $('header nav').css('display', 'flex');
+        } else {
+            $('header nav').css('display', 'none');
+        }
     })
 })

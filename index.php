@@ -12,6 +12,9 @@
         $newStr = strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
         return strtolower($newStr);
     }
+
+    // website theme
+    $theme = (isset($_COOKIE['portfolioTheme'])) ? $_COOKIE['portfolioTheme'] : 'light';
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +25,8 @@
     <meta name="description" content="Descrição do meu website"> <!-- seo -->
     <meta name="keywords" content="palavras,chave,do,meu,website"> <!-- seo -->
     <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
-    <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/style.css" /> <!-- main css file -->
+    <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/footer.css" /> <!-- footer css file -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!-- jQuery API -->
     <title>Portfólio | Gustavo Souza</title>
@@ -34,11 +37,15 @@
     <!-- include path -->
     <input type="hidden" name="include_path" value="<?= INCLUDE_PATH; ?>" />
 
+    <!-- website theme -->
+    <input type="hidden" name="theme" value="<?= $theme ?>" />
+
     <!-- loading container -->
     <div class="loading">
-        <img src="<?= INCLUDE_PATH ?>assets/images/loading-light.svg" alt="loading spinner" />
+        <img src="<?= INCLUDE_PATH ?>assets/images/loading-<?= $theme ?>.svg" alt="loading spinner" />
     </div>
 
+    <!-- content -->
     <main>
         <section id="<?= stripAccents($content->nav1) ?>">
             <div class="content">
@@ -79,6 +86,19 @@
 
     <?php include 'pages/footer.php'; ?>
 
+    <script>
+        window.addEventListener('beforeunload', function() {
+            document.querySelector('.loading').style.display = 'flex';
+        });
+
+        window.addEventListener('load', function() {
+            document.querySelector('.loading').style.display = 'none';
+            setTimeout(() => {
+                document.querySelector('.theme-toggle').style.transition = '.2s';
+                document.querySelector('.theme-toggle span').style.transition = '.2s';
+            }, 200)
+        });
+    </script>
     <script src="<?= INCLUDE_PATH; ?>assets/js/script.js"></script> <!-- main javascript file -->
 </body>
 </html>
