@@ -87,6 +87,7 @@
     <?php include 'pages/footer.php'; ?>
 
     <script>
+        // page loading
         window.addEventListener('beforeunload', function() {
             document.querySelector('.loading').style.display = 'flex';
         });

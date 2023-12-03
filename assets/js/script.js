@@ -2,9 +2,6 @@ $(function() {
     // include path
     const include_path = $('input[name="include_path"]').val();
 
-    // page loading animation
-    
-
     // mobile nav
     let scroll = 0;
 
