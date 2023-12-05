@@ -24,15 +24,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição do meu website"> <!-- seo -->
     <meta name="keywords" content="palavras,chave,do,meu,website"> <!-- seo -->
+    <!-- css -->
+    <style>.hidden {visibility: hidden; background: <?php if($theme == 'dark') echo '#222'; else echo '#fff'; ?>;}</style>
     <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/style.css" /> <!-- main css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/footer.css" /> <!-- footer css file -->
+    <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!-- jQuery API -->
     <script>
         // page loading
-        $(window).on('load', function() {
+        /*$(window).on('load', function() {
             $('.loading').fadeOut(200);
+        })*/
+
+        $('html').addClass('hidden')
+        $(window).on('load', function() {
+            $('html').removeClass('hidden');
         })
     </script>
     <title>Portfólio | Gustavo Souza</title>
