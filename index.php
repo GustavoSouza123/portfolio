@@ -25,7 +25,12 @@
     <meta name="description" content="Descrição do meu website"> <!-- seo -->
     <meta name="keywords" content="palavras,chave,do,meu,website"> <!-- seo -->
     <!-- css -->
-    <style>.hidden {visibility: hidden; background: <?php if($theme == 'dark') echo '#222'; else echo '#fff'; ?>;}</style>
+    <style>
+        .hidden {
+            visibility: hidden;
+            background: <?php if($theme == 'dark') echo '#222'; else echo '#fff'; ?>;
+        }
+    </style>
     <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/style.css" /> <!-- main css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
@@ -41,6 +46,8 @@
         $('html').addClass('hidden')
         $(window).on('load', function() {
             $('html').removeClass('hidden');
+            $('header nav .languages div').css('transition', '.2s');
+            $('header nav ul li a').css('transition', '.2s');
         })
     </script>
     <title>Portfólio | Gustavo Souza</title>

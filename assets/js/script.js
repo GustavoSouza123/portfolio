@@ -64,7 +64,7 @@ $(function() {
     function lightTheme() {
         $('html').removeClass('dark');
         themeToggle.removeClass('active');
-        themeToggle.find('span').animate({ left: -5 }, 50, 'linear');
+        themeToggle.find('span').animate({ left: -5 }, 100, 'linear');
     }
 
     function darkTheme(animDelay) {
@@ -81,7 +81,7 @@ $(function() {
         theme = (theme == 'light') ? 'dark' : 'light';
 
         if(theme == 'dark') {
-            darkTheme(50);
+            darkTheme(100);
         } else {
             lightTheme();
         }
