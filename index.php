@@ -45,9 +45,9 @@
 
         $('html').addClass('hidden')
         $(window).on('load', function() {
-            $('html').removeClass('hidden');
             $('header nav .languages div').css('transition', '.2s');
             $('header nav ul li a').css('transition', '.2s');
+            $('html').removeClass('hidden');
         })
     </script>
     <title>Portfólio | Gustavo Souza</title>
