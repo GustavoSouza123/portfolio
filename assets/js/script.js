@@ -89,6 +89,7 @@ $(function() {
         $('header .social a img').eq(0).attr('src', `${include_path}assets/images/github-${theme}.svg`);
         $('header .social a img').eq(1).attr('src', `${include_path}assets/images/linkedin-${theme}.svg`);
         $('header .social a img').eq(2).attr('src', `${include_path}assets/images/twitter-${theme}.svg`);
+        $('section').eq(0).find('.scroll img').attr('src', `${include_path}assets/images/arrows-down-${theme}.svg`);
 
         document.cookie = `portfolioTheme=${theme}; expires=60*60*24; path=/`;
     })
