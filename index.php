@@ -89,8 +89,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu accumsan velit, sit amet porta ipsum. Aenean sit amet est a quam ultricies tempor et ut mi. Curabitur odio massa, sollicitudin sodales massa sit amet, varius fringilla sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget pharetra orci. Donec at posuere neque. Suspendisse lacinia, elit a ultricies condimentum, quam neque luctus odio, et facilisis nisi orci ut purus. Sed fermentum dolor mi, eget porttitor augue consectetur lobortis. Mauris aliquam et odio in pulvinar. Phasellus vitae mauris vitae ante placerat tempor et eu nunc. Integer quis magna pellentesque, molestie arcu in, porta orci.</p>
 
                         <p>Nunc lacinia facilisis erat, cursus blandit elit. In varius lobortis aliquet. Vivamus massa enim, tempus ut orci sit amet, varius interdum turpis. Etiam quam quam, venenatis vel accumsan non, commodo vel felis. Nullam vitae velit diam. Donec facilisis, mauris at pulvinar efficitur, est sapien vestibulum augue, id congue ipsum ante quis ante. Sed a nunc tortor. Pellentesque dolor dui, mattis non gravida a, sodales in dui. Pellentesque dignissim nunc sed vestibulum feugiat. Nunc ac mi sapien. Donec ultricies sed justo sed commodo. Mauris non lorem eget tellus imperdiet ornare. Sed eu sem velit. Vestibulum posuere urna mi, ut fermentum velit dapibus lobortis.</p>
-
-                        <p>Nam tristique diam vel lobortis tincidunt. Duis fermentum tortor in ex tincidunt tincidunt. Morbi ultricies justo eu libero cursus, id consectetur tellus ultrices. Quisque hendrerit sapien et augue malesuada, in euismod justo pretium. Etiam sit amet nulla blandit felis fringilla viverra. Donec ac orci nisl. Quisque convallis mauris lectus, sed pharetra mauris varius et. Praesent tincidunt nulla quis diam feugiat, vel molestie massa efficitur. In feugiat augue nec quam cursus, at lacinia odio faucibus. Vivamus aliquet erat quam, vel ornare mauris suscipit vitae. Maecenas auctor interdum congue. Mauris dignissim eget ex a ultricies.</p>
                     </div>
                     <div class="image">
                         <div class="image-container">
@@ -104,7 +102,33 @@
         <section id="<?= stripAccents($content->nav3) ?>">
             <div class="content">
                 <h1><?= $content->section3Title ?></h1>
-
+                <div class="projects">
+                    <?php for($i = 0; $i < 3; $i++) { ?>
+                    <div class="project">
+                        <div class="info">
+                            <div class="title">My first project</div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu accumsan velit, sit amet porta ipsum. Aenean sit amet est a quam ultricies tempor et ut mi.</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="technologies">
+                                    <img src="assets/images/github-dark.svg" alt="Technology" />
+                                    <img src="assets/images/github-dark.svg" alt="Technology" />
+                                    <img src="assets/images/github-dark.svg" alt="Technology" />
+                                    <img src="assets/images/github-dark.svg" alt="Technology" />
+                                </div>
+                                <div class="links">
+                                    <a href=""><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live" />Live</a>
+                                    <a href="https://github.com/GustavoSouza123"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source" />Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="https://lipsum.app/id/13/1600x900" alt="Project image" />
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
             </div>
         </section>
 
