@@ -240,7 +240,7 @@ section:nth-child(3) .projects .project .info .bottom > div:not(:last-child) {
 }
 
 section:nth-child(3) .projects .project .info .bottom .technologies img {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 section:nth-child(3) .projects .project .info .bottom .links {
@@ -359,6 +359,10 @@ section:nth-child(3) .projects .project .image img {
 
     section:nth-child(2) .about-content > div {
         width: 100%;
+    }
+
+    section:nth-child(2) .info {
+        padding: 0;
     }
 
     section:nth-child(2) .image {
