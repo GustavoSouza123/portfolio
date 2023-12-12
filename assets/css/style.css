@@ -28,7 +28,12 @@ html {
     --category-bg: #fafafa;
     --category-color: #000;
     --link-bg: #222;
-    --link-color: #eee;
+    --link-color: #fff;
+    --input-color: #000;
+    --input-border: #eee;
+    --input-outline: #eee;
+    --submit-bg: #222;
+    --submit-color: #fff;
     --footer-border: #eee; 
 }
 
@@ -56,6 +61,11 @@ html.dark {
     --category-color: #eee;
     --link-bg: #fff;
     --link-color: #000;
+    --input-color: #fff;
+    --input-border: #333;
+    --input-outline: #333;
+    --submit-bg: #fff;
+    --submit-color: #000;
     --footer-border: #333; 
 }
 
@@ -350,7 +360,7 @@ section:nth-child(3) .projects .project .image img {
 
 .posts .post:hover {
     /* scale: 1.05; */
-    box-shadow: 0px 0px 10px 2px var(--post-box-shadow);
+    box-shadow: 0px 7px 29px 0px var(--post-box-shadow);
 }
 
 .posts .post .image {
@@ -425,6 +435,68 @@ section:nth-child(3) .projects .project .image img {
     font-weight: 600;
 }
 
+/* contact */
+
+section:nth-child(5) .contact {
+}
+
+section:nth-child(5) form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(5) form input:not([type="submit"]),
+section:nth-child(5) form textarea {
+    font-family: 'Segoe UI'; 
+    width: 95%;
+    max-width: 600px;
+    background: transparent;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    outline: none;
+    color: var(--input-color);
+}
+
+section:nth-child(5) form input:not([type="submit"]):focus,
+section:nth-child(5) form textarea:focus {
+    outline: 3px solid var(--input-outline);
+}
+
+
+section:nth-child(5) form input:not([type="submit"]) {
+    height: 50px;
+}
+
+section:nth-child(5) form textarea {
+    height: 200px;
+    padding: 10px;
+    resize: none;
+}
+
+section:nth-child(5) form input::placeholder,
+section:nth-child(5) form textarea::placeholder {
+    font-size: 16px;
+}
+
+section:nth-child(5) form input[type="submit"] {
+    font-family: 'Segoe UI'; 
+    width: 150px;
+    height: 40px;
+    background-color: var(--submit-bg);
+    color: var(--submit-color);
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
 
 /* animations */
 

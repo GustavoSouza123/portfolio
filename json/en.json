@@ -1,10 +1,11 @@
 {
+    "portfolioTitle": "Portfolio",
+
     "nav1": "Home",
     "nav2": "About",
     "nav3": "Projects",
     "nav4": "Blog",
     "nav5": "Contact",
-    "blogTitle": "My Blog",
     "construction": "Under construction!",
 
     "section1Title": "Hey 👋, my name is",
@@ -19,5 +20,15 @@
     "section4Title": "My Blog",
     "section4SeeAll": "See all posts",
 
-    "section5Title": "Contact Me"
+    "section5Title": "Contact Me",
+    "section5Name": "Your name",
+    "section5Email": "Your email",
+    "section5Message": "Your message",
+    "section5Submit": "Send",
+
+
+    "blogTitle": "My blog",
+
+    "articlePublished": "Published in",
+    "articleReadTime": "minute(s) read"
 }

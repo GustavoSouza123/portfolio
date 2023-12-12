@@ -22,8 +22,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição do meu website"> <!-- seo -->
-    <meta name="keywords" content="palavras,chave,do,meu,website"> <!-- seo -->
+    <meta name="description" content="My portfolio website | Gustavo Souza"> <!-- seo -->
+    <meta name="keywords" content="portfolio,website,tech,web,programming,coding"> <!-- seo -->
+    <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
     <!-- css -->
     <style>
         .hidden {
@@ -50,7 +51,7 @@
             $('html').removeClass('hidden');
         })
     </script>
-    <title>Portfólio | Gustavo Souza</title>
+    <title><?= $content->portfolioTitle ?> | Gustavo Souza</title>
 </head>
 <body>
     <?php include 'pages/header.php'; ?>
@@ -173,7 +174,14 @@
         <section id="<?= stripAccents($content->nav5) ?>">
             <div class="content">
                 <h1><?= $content->section5Title ?></h1>
-
+                <div class="contact">
+                    <form method="post" action="">
+                        <input type="text" name="name" placeholder="<?= $content->section5Name ?>" />
+                        <input type="email" name="email" placeholder="<?= $content->section5Email ?>" />
+                        <textarea name="message" placeholder="<?= $content->section5Message ?>"></textarea>
+                        <input type="submit" name="submit" value="<?= $content->section5Submit ?>" />
+                    </form>
+                </div>
             </div>
         </section>
     </main>
