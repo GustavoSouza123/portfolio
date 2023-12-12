@@ -23,6 +23,12 @@ html {
     --project-border: #eee;
     --project-link-bg: #eee;
     --project-link-hover: #eaeaea;
+    --post-box-shadow: #eee;
+    --post-border: #eee;
+    --category-bg: #fafafa;
+    --category-color: #000;
+    --link-bg: #222;
+    --link-color: #eee;
     --footer-border: #eee; 
 }
 
@@ -44,6 +50,12 @@ html.dark {
     --project-border: #333;
     --project-link-bg: #333;
     --project-link-hover: #3a3a3a;
+    --post-box-shadow: #2c2c2c;
+    --post-border: #2c2c2c;
+    --category-bg: #111;
+    --category-color: #eee;
+    --link-bg: #fff;
+    --link-color: #000;
     --footer-border: #333; 
 }
 
@@ -84,7 +96,7 @@ main {
 
 section {
     width: 100%;
-    min-height: calc(100vh - 50px);
+    min-height: calc(50vh - 50px);
     display: flex;
     justify-content: center; 
     padding: 0 3%;
@@ -107,6 +119,7 @@ section h1 {
     font-weight: 600;
     font-size: 32px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 section p {
@@ -115,6 +128,10 @@ section p {
 }
 
 /* home */
+
+section:nth-child(1) {
+    min-height: calc(100vh - 50px);
+}
 
 section:nth-child(1) .content {
     height: auto;
@@ -147,10 +164,33 @@ section:nth-child(1) .info .subtitle {
     font-size: 28px;
 }
 
+section:nth-child(1) .info .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section:nth-child(1) .info .buttons > div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-bg);
+    color: var(--link-color);
+    padding: 0 20px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    transition: .2s;
+    font-weight: 600;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 section:nth-child(1) .scroll img {
     position: relative;
     height: 32px;
-    animation: scrollDownAnim 2s ease-in-out 1s infinite;
+    animation: scrollDownAnim 2s linear 1s infinite;
 }
 
 /* about */
@@ -159,6 +199,7 @@ section:nth-child(2) .about-content {
     width: 100%;
     height: calc(100% - 30px - 30px);
     display: flex;
+    padding-bottom: 20px;
 }
 
 section:nth-child(2) .info {
@@ -284,6 +325,107 @@ section:nth-child(3) .projects .project .image img {
     object-fit: contain;
 }
 
+/* blog */
+
+.posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.posts .post {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: scale .2s, box-shadow .2s;
+    cursor: pointer;
+    border: 1px solid var(--post-border);
+}
+
+.posts .post:hover {
+    /* scale: 1.05; */
+    box-shadow: 0px 0px 10px 2px var(--post-box-shadow);
+}
+
+.posts .post .image {
+    width: 100%;
+    height: 50%;
+}
+
+.posts .post .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.posts .post .content {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+.posts .post .creation-date {
+    /* margin-top: 10px;  */
+}
+
+.posts .post .title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.posts .post .subtitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.posts .post .read-more {
+    display: none;
+}
+
+.posts .post .category {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--category-bg);
+    color: var(--category-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.blog-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.blog-link a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-bg);
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 0 20px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    transition: .2s;
+    font-weight: 600;
+}
+
+
 /* animations */
 
 @keyframes scrollDownAnim {
@@ -313,10 +455,6 @@ section:nth-child(3) .projects .project .image img {
 }
 
 @media only screen and (max-width: 800px) {
-    section:not(:nth-child(1)) h1 {
-        text-align: center;
-    }
-
     section:nth-child(3) .projects {
         align-items: center;
     }
@@ -393,5 +531,9 @@ section:nth-child(3) .projects .project .image img {
 @media only screen and (max-width: 375px) {
     section:nth-child(1) .info .subtitle {
         font-size: 20px;
+    }
+
+    section:nth-child(1) .info .buttons > div {
+            font-size: 13px;
     }
 }

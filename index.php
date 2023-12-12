@@ -74,6 +74,10 @@
                     <p class="hello"><?= $content->section1Title ?></p>
                     <h1 class="name">Gustavo Souza</h1>
                     <p class="subtitle"><?= $content->section1Subtitle ?></p>
+                    <div class="buttons">
+                        <div class="projects"><?= $content->section1ProjectsBtn ?></div>
+                        <div class="contact"><?= $content->section1ContactBtn ?></div>
+                    </div>
                 </div>
                 <div class="scroll">
                     <img src="<?= INCLUDE_PATH ?>assets/images/arrows-down-<?= $theme ?>.svg" alt="Scroll down" />
@@ -135,7 +139,34 @@
         <section id="<?= stripAccents($content->nav4) ?>">
             <div class="content">
                 <h1><?= $content->section4Title ?></h1>
-                <a href="<?= INCLUDE_PATH_BLOG ?>"><?= $content->section4SeeAll ?></a>
+                <div class="posts">
+                 <?php
+                    $sql = $pdo->prepare("SELECT * FROM `tb_posts` WHERE published = 1 AND featured = 1");
+                    $sql->execute();
+                    $posts = $sql->fetchAll(PDO::FETCH_ASSOC);
+                    foreach($posts as $key => $value) {
+                        $sql = $pdo->prepare("SELECT `name` FROM `tb_categories` WHERE id = ?");
+                        $sql->execute(array($value['category_id']));
+                        $category = $sql->fetchColumn();
+                        echo '
+                        <div class="post">
+                            <div class="image">
+                                <img src="'.INCLUDE_PATH_BLOG.'admin/'.$value['thumbnail'].'" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="title">'.$value['title'].'</div>
+                                <div class="subtitle">'.$value['subtitle'].'</div>
+                                <div class="read-more"><a href="'.INCLUDE_PATH_BLOG.'article?id='.$value['id'].'">Ler mais</a></div>
+                                <div class="category">'.$category.'</div>
+                            </div>
+                        </div>
+                        ';
+                    }
+                ?>
+                </div>
+                <div class="blog-link">
+                    <a href="<?= INCLUDE_PATH_BLOG ?>"><?= $content->section4SeeAll ?></a>
+                </div>
             </div>
         </section>
 

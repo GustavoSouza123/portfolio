@@ -134,6 +134,7 @@ $(function() {
 
     })
 
+    // highlighting navs when scrolling through sections 
     $(window).scroll(function() {
         setTimeout(function() {
             var windowOffY = $(window).scrollTop();
@@ -158,5 +159,19 @@ $(function() {
         } else {
             $('header nav').css('display', 'none');
         }
+    })
+
+    // home buttons links
+    $('section').eq(0).find('.buttons .projects').click(function() {
+        $('nav a[target="#projects"]').click();
+    })
+
+    $('section').eq(0).find('.buttons .contact').click(function() {
+        $('nav a[target="#contact"]').click();
+    })
+
+    // showing posts when clicking on post cards
+    $('.posts .post').on('click', function() {
+        $(this).find('a')[0].click();
     })
 })
