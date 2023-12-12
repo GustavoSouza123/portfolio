@@ -101,16 +101,20 @@ header nav .languages > div {
     padding: 0 5px;
     margin: 0 5px;
     margin-bottom: 2px;
-    color: var(--languages-color);
     cursor: pointer;
 }
 
-header nav .languages > div:hover {
+header nav .languages > div:hover a {
     color: var(--languages-color-hover);
 }
 
-header nav .languages > div.active {
+header nav .languages > div.active a {
     color: var(--languages-color-active);
+}
+
+header nav .languages > div a {
+    color: var(--languages-color);
+    text-decoration: none;
 }
 
 /* nav ul */

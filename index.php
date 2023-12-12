@@ -46,7 +46,7 @@
 
         $('html').addClass('hidden')
         $(window).on('load', function() {
-            $('header nav .languages div').css('transition', '.2s');
+            $('header nav .languages div a').css('transition', '.2s');
             $('header nav ul li a').css('transition', '.2s');
             $('html').removeClass('hidden');
         })
@@ -76,8 +76,8 @@
                     <h1 class="name">Gustavo Souza</h1>
                     <p class="subtitle"><?= $content->section1Subtitle ?></p>
                     <div class="buttons">
-                        <div class="projects"><?= $content->section1ProjectsBtn ?></div>
-                        <div class="contact"><?= $content->section1ContactBtn ?></div>
+                        <button class="<?= stripAccents($content->nav3) ?>"><?= $content->section1ProjectsBtn ?></button>
+                        <button class="<?= stripAccents($content->nav5) ?>"><?= $content->section1ContactBtn ?></button>
                     </div>
                 </div>
                 <div class="scroll">
