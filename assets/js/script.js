@@ -86,6 +86,7 @@ $(function() {
             lightTheme();
         }
 
+        $('.loading img').eq(0).attr('src', `${include_path}assets/images/loading-${theme}.svg`);
         $('header .social a img').eq(0).attr('src', `${include_path}assets/images/github-${theme}.svg`);
         $('header .social a img').eq(1).attr('src', `${include_path}assets/images/linkedin-${theme}.svg`);
         $('header .social a img').eq(2).attr('src', `${include_path}assets/images/twitter-${theme}.svg`);
@@ -131,7 +132,6 @@ $(function() {
                 closeNav();
             }
        }
-
     })
 
     // highlighting navs when scrolling through sections 
@@ -162,16 +162,48 @@ $(function() {
     })
 
     // home buttons links
-    $('section').eq(0).find('.buttons .projects').click(function() {
-        $('nav a[target="#projects"]').click();
+    $('section').eq(0).find('.buttons button').eq(0).click(function() {
+        $(`nav a[target="#${$(this).attr('class')}"]`).click();
     })
 
-    $('section').eq(0).find('.buttons .contact').click(function() {
-        $('nav a[target="#contact"]').click();
+    $('section').eq(0).find('.buttons button').eq(1).click(function() {
+        $(`nav a[target="#${$(this).attr('class')}"]`).click();
     })
 
     // showing posts when clicking on post cards
     $('.posts .post').on('click', function() {
         $(this).find('a')[0].click();
+    })
+
+    // contact form 
+    $('body').on('submit', 'form', function() {
+        let form = $(this);
+        $.ajax({
+            beforeSend: function() {
+                $('.loading')
+                    .css('display', 'flex')
+                    .hide()
+                    .fadeIn();
+            },
+            url: include_path+'ajax/contactForm.php',
+            method: 'post',
+            dataType: 'json',
+            data: form.serialize(),
+        }).done(function(data) {
+            $('.loading').fadeOut();
+            if(data.success) {
+                $('.form-message.success').fadeIn();
+                setTimeout(function() {
+                    $('.form-message.success').fadeOut();
+                }, 3000);
+                document.querySelector('form').reset();
+            } else {
+                $('.form-message.error').fadeIn();
+                setTimeout(function() {
+                    $('.form-message.error').fadeOut();
+                }, 3000);
+            }
+        });
+        return false;
     })
 })

@@ -67,6 +67,10 @@
         <img src="<?= INCLUDE_PATH ?>assets/images/loading-<?= $theme ?>.svg" alt="loading spinner" />
     </div>
 
+    <!-- form messages -->
+    <div class="form-message success"><?= $content->successMessage ?></div>
+    <div class="form-message error"><?= $content->errorMessage ?></div>
+
     <!-- content -->
     <main>
         <section id="<?= stripAccents($content->nav1) ?>">

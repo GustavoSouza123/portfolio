@@ -35,6 +35,8 @@ html {
     --input-outline: #aaa;
     --submit-bg: #222;
     --submit-color: #fff;
+    --green: green;
+    --red: red;
     --footer-border: #eee; 
 }
 
@@ -93,6 +95,27 @@ body {
     display: none;
     align-items: center;
     justify-content: center; 
+}
+
+/* form messages */
+
+.form-message {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 90px;
+    right: 5%;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: var(--input-outline);
+}
+
+.form-message.success {
+    background-color: var(--green);
+}
+
+.form-message.error {
+    background-color: var(--red);
 }
 
 /* main */

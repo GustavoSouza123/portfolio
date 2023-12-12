@@ -1,2 +1,4 @@
 *.hostinger.php
 blog/
+composer.phar
+/vendor/

@@ -25,6 +25,8 @@
     "section5Email": "Seu email",
     "section5Message": "Sua mensagem",
     "section5Submit": "Enviar",
+    "successMessage": "Formulário enviado com sucesso!",
+    "errorMessage": "Ocorreu um erro ao enviar o formulário",
 
 
     "blogTitle": "Meu blog",
