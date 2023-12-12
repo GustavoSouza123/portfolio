@@ -533,7 +533,7 @@ section:nth-child(3) .projects .project .image img {
         font-size: 20px;
     }
 
-    section:nth-child(1) .info .buttons > div {
-            font-size: 13px;
+    section:nth-child(1) .info .buttons {
+        margin-top: 20px;
     }
 }
