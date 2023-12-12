@@ -11,11 +11,12 @@
     if($name == '' || $email == '' || $message == '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $data['success'] = false;
     } else {
-        $phpmailer->setFrom($email, $name); // sender
+        $phpmailer->setFrom('contato@gustavo-souza.com', $name); 
         $data['success'] = true;
     }
 
     if($data['success']) {
+        $phpmailer->addReplyTo($email, $name); // sender
         $phpmailer->addAddress('contato@gustavo-souza.com', 'Gustavo'); // recipient
         $body= '';
         foreach($_POST as $key => $value) {
@@ -25,7 +26,7 @@
         }
         $phpmailer->formatEmail(array('subject'=>'New email from my portfolio', 'body'=>$body));
 
-        if($phpmailer->sendMail()) {
+        if($phpmailer->sendEmail()) {
             $data['success'] = true;
         } else {
             $data['success'] = false;

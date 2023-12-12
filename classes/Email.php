@@ -18,7 +18,7 @@
             $this->mailer->SMTPDebug = 0;
             $this->mailer->Username = $username;
             $this->mailer->Password = $password;
-            $this->mailer->SMTPSecure = 'tls';
+            $this->mailer->SMTPSecure = SMTP_SECURE;
             $this->mailer->Port = 465;
             $this->mailer->isHTML(true);
             $this->mailer->CharSet = 'UTF-8';
@@ -26,6 +26,10 @@
 
         public function setFrom($email, $name) {
             $this->mailer->setFrom($email, $name);
+        }
+
+        public function addReplyTo($email, $name) {
+            $this->mailer->addReplyTo($email, $name);
         }
 
         public function addAddress($email, $name) {
@@ -38,7 +42,7 @@
             $this->mailer->AltBody = strip_tags($info['body']);
         }
 
-        public function sendMail() {
+        public function sendEmail() {
             try {
                 $this->mailer->send();
                 return true;

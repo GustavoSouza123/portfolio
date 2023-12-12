@@ -15,6 +15,7 @@
     define('SMTP_HOST', 'sandbox.smtp.mailtrap.io');
     define('SMTP_USERNAME', 'f7cdfe30941438');
     define('SMTP_PASSWORD', 'deb2ecd305f70d');
+    define('SMTP_SECURE', 'tls');
 
     /* autoload classes */
     $autoload = function($class) {
