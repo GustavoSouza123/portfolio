@@ -330,7 +330,10 @@ section:nth-child(3) .projects .project .info .bottom > div:not(:last-child) {
 }
 
 section:nth-child(3) .projects .project .info .bottom .technologies img {
+    height: 32px;
     margin-right: 5px;
+    filter: grayscale(100%);
+    opacity: .5;
 }
 
 section:nth-child(3) .projects .project .info .bottom .links {

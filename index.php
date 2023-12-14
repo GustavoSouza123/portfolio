@@ -112,7 +112,31 @@
             <div class="content">
                 <h1><?= $content->section3Title ?></h1>
                 <div class="projects">
-                    <?php for($i = 0; $i < 3; $i++) { ?>
+                    <!-- project 1 -->
+                    <div class="project">
+                        <div class="info">
+                            <div class="title">Article preview component</div>
+                            <div class="description">
+                                <p>This is my first Frontent Mentor challenge.</p>                                    
+                            </div>
+                            <div class="bottom">
+                                <div class="technologies">
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/html.svg" alt="HMTL logo" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/css.svg" alt="CSS logo" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/js.svg" alt="JavaScript logo" />
+                                </div>
+                                <div class="links">
+                                    <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live link" />Live</a>
+                                    <a href="https://github.com/GustavoSouza123/article-preview-component" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source link" />Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" />
+                        </div>
+                    </div>
+                    <!-- boilerplate projecs -->
+                    <?php for($i = 0; $i < 2; $i++) { ?>
                     <div class="project">
                         <div class="info">
                             <div class="title">My first project</div>
