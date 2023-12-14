@@ -126,7 +126,7 @@ $(function() {
     })
 
     // nav links
-    $('nav.portfolio a').click(function(e) {
+    $('nav.portfolio ul a').click(function(e) {
         e.preventDefault();
         let anchor = $(this).attr('target');
 

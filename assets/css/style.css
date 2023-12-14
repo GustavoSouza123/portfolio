@@ -166,7 +166,7 @@ section p {
 /* home */
 
 section:nth-child(1) {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100dvh - 70px);
 }
 
 section:nth-child(1) .content {
@@ -233,7 +233,7 @@ section:nth-child(1) .info .buttons > button:focus {
 
 section:nth-child(1) .scroll {
     position: absolute;
-    top: calc(100vh - 32px - 50px);
+    top: calc(100dvh - 32px - 50px);
 }
 
 section:nth-child(1) .scroll img {
