@@ -229,6 +229,11 @@ section:nth-child(1) .info .buttons > button:focus {
     outline: 3px solid var(--input-outline);
 }
 
+section:nth-child(1) .scroll {
+    position: absolute;
+    top: calc(100vh - 32px - 50px);
+}
+
 section:nth-child(1) .scroll img {
     position: relative;
     height: 32px;

@@ -19,6 +19,15 @@ $(function() {
         }, 200);
     }
 
+    function tryCloseNav() {
+        if($('nav').hasClass('mobile')) {
+            isNavOpen = (isNavOpen) ? false : true;
+            if(!isNavOpen) {
+                closeNav();
+            }
+       }
+    }
+
     var isNavOpen = false;
     $('.menu-toggle').click(function(e) {
         e.stopPropagation();
@@ -95,6 +104,7 @@ $(function() {
         $('section').eq(2).find('.projects .project .info a img').eq(1).attr('src', `${include_path}assets/images/source-${theme}.svg`);
 
         document.cookie = `portfolioTheme=${theme}; expires=60*60*24; path=/`;
+        tryCloseNav();
     })
 
     // languages
@@ -125,13 +135,8 @@ $(function() {
         }, 500);
         $('nav.portfolio a').removeClass('active');
         $(this).addClass('active');
-
-        if($('nav').hasClass('mobile')) {
-            isNavOpen = (isNavOpen) ? false : true;
-            if(!isNavOpen) {
-                closeNav();
-            }
-       }
+        
+        tryCloseNav();
     })
 
     // highlighting navs when scrolling through sections 
