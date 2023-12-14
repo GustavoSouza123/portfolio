@@ -2,6 +2,11 @@ $(function() {
     // include path
     const include_path = $('input[name="include_path"]').val();
 
+    // disabled links (they exist for accessibility reasons)
+    $('a.disabled').click(function(e) {
+        e.preventDefault();
+    })
+
     // mobile nav
     let scroll = 0;
 

@@ -7,13 +7,13 @@
         </div>
         <nav class="portfolio">
             <div class="theme-toggle">
-                <a href="">
+                <a class="disabled" href="">
                     <span></span>
                 </a>
             </div>
             <div class="languages">
-                <div language="en" <?php if($activeLanguage == 'en') echo 'class="active"'; ?>><a href="">EN</a></div>
-                <div language="pt-br" <?php if($activeLanguage == 'pt-br') echo 'class="active"'; ?>><a href="">PT-BR</a></div>
+                <div language="en" <?php if($activeLanguage == 'en') echo 'class="active"'; ?>><a class="disabled" href="">EN</a></div>
+                <div language="pt-br" <?php if($activeLanguage == 'pt-br') echo 'class="active"'; ?>><a class="disabled" href="">PT-BR</a></div>
             </div>
             <ul>
                 <li><a href="" target="<?= '#'.stripAccents($content->nav1) ?>" class="active" ><?= $content->nav1 ?></a></li>
