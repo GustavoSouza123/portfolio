@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/style.css" /> <!-- main css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/footer.css" /> <!-- footer css file -->
+    <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/animations.css" /> <!-- animations css file -->
     <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!-- jQuery API -->
     <script>
@@ -132,7 +133,7 @@
                             </div>
                         </div>
                         <div class="image">
-                            <img src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" />
+                            <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" /></a>
                         </div>
                     </div>
                     <!-- boilerplate projecs -->
@@ -217,5 +218,6 @@
     <?php include 'pages/footer.php'; ?>
 
     <script src="<?= INCLUDE_PATH; ?>assets/js/script.js"></script> <!-- main javascript file -->
+    <script src="<?= INCLUDE_PATH; ?>assets/js/animations.js"></script> <!-- animations javascript file -->
 </body>
 </html>
