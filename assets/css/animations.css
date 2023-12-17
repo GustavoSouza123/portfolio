@@ -1,10 +1,12 @@
-section {
+section,
+section:nth-child(3) .projects .project,
+.posts .post {
     opacity: 0;
     transform: translateX(-50px);
-    transition: .5s;
+    transition: opacity .5s, transform .5s;
 }
 
 .show {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }

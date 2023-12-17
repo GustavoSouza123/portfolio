@@ -96,13 +96,11 @@
                 <h1><?= $content->section2Title ?></h1>
                 <div class="about-content">
                     <div class="info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu accumsan velit, sit amet porta ipsum. Aenean sit amet est a quam ultricies tempor et ut mi. Curabitur odio massa, sollicitudin sodales massa sit amet, varius fringilla sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget pharetra orci. Donec at posuere neque. Suspendisse lacinia, elit a ultricies condimentum, quam neque luctus odio, et facilisis nisi orci ut purus. Sed fermentum dolor mi, eget porttitor augue consectetur lobortis. Mauris aliquam et odio in pulvinar. Phasellus vitae mauris vitae ante placerat tempor et eu nunc. Integer quis magna pellentesque, molestie arcu in, porta orci.</p>
-
-                        <p>Nunc lacinia facilisis erat, cursus blandit elit. In varius lobortis aliquet. Vivamus massa enim, tempus ut orci sit amet, varius interdum turpis. Etiam quam quam, venenatis vel accumsan non, commodo vel felis. Nullam vitae velit diam. Donec facilisis, mauris at pulvinar efficitur, est sapien vestibulum augue, id congue ipsum ante quis ante. Sed a nunc tortor. Pellentesque dolor dui, mattis non gravida a, sodales in dui. Pellentesque dignissim nunc sed vestibulum feugiat. Nunc ac mi sapien. Donec ultricies sed justo sed commodo. Mauris non lorem eget tellus imperdiet ornare. Sed eu sem velit. Vestibulum posuere urna mi, ut fermentum velit dapibus lobortis.</p>
+                        <?= $content->about ?>
                     </div>
                     <div class="image">
                         <div class="image-container">
-                            <img src="<?= INCLUDE_PATH ?>assets/images/me.png" alt="My photo" />
+                            <img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/me.png" alt="My photo" />
                         </div>
                     </div>
                 </div>
@@ -118,7 +116,7 @@
                         <div class="info">
                             <div class="title">Article preview component</div>
                             <div class="description">
-                                <p>This is my first Frontent Mentor challenge.</p>                                    
+                                <p><?= $content->articlePreview ?></p>                                    
                             </div>
                             <div class="bottom">
                                 <div class="technologies">
@@ -133,7 +131,7 @@
                             </div>
                         </div>
                         <div class="image">
-                            <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" /></a>
+                            <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" /></a>
                         </div>
                     </div>
                     <!-- boilerplate projecs -->
@@ -158,7 +156,7 @@
                             </div>
                         </div>
                         <div class="image">
-                            <img src="https://lipsum.app/id/13/1600x900" alt="Project image" />
+                            <img loading="lazy" src="https://lipsum.app/id/13/1600x900" alt="Project image" />
                         </div>
                     </div>
                     <?php } ?>
@@ -181,7 +179,7 @@
                         echo '
                         <div class="post">
                             <div class="image">
-                                <img src="'.INCLUDE_PATH_BLOG.'admin/'.$value['thumbnail'].'" alt="" />
+                                <img loading="lazy" src="'.INCLUDE_PATH_BLOG.'admin/'.$value['thumbnail'].'" alt="" />
                             </div>
                             <div class="content">
                                 <div class="title">'.$value['title'].'</div>

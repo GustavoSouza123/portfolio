@@ -1,6 +1,6 @@
 $(window).on('load', function() {
-
-    function animateOnScroll(el) {
+    // function to animate an element
+    function animate(el) {
         let windowOffY = $(window).scrollTop();
         let windowHeight = $(window).height();
         let elOffY = el.offset().top;
@@ -11,13 +11,43 @@ $(window).on('load', function() {
         }
     }
 
-    $('section').each(function() {
-        animateOnScroll($(this));
-    })
-
-    $(window).scroll(function() {
+    // functions to animate dom elements
+    function animateSection() {
         $('section').each(function() {
-            animateOnScroll($(this));
+            let section = $(this);
+            setTimeout(function() {
+                animate(section);
+            }, 200);
         })
+    }
+
+    function animateProjects() {
+        let project = $('.projects .project');
+        for(let i = 0; i < project.length; i++) {
+            setTimeout(function() {
+                animate(project.eq(i));
+            }, 500);
+        }
+    }
+
+    function animateBlogPosts() {
+        let post = $('.posts .post');
+        for(let i = 0; i < post.length; i++) {
+            setTimeout(function() {
+                animate(post.eq(i)); 
+            }, 500+(300*i));
+        }
+    }
+
+    // animations on window loading
+    animateSection();
+    animateProjects();
+    animateBlogPosts();
+
+    // animations on scroll
+    $(window).scroll(function() {
+        animateSection();
+        animateProjects();
+        animateBlogPosts();
     })
 })
