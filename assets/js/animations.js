@@ -13,7 +13,9 @@ $(window).on('load', function() {
 
     // functions to animate dom elements
     function animateHeader() {
-        $('header').addClass('show');
+        setTimeout(function() {
+            $('header').addClass('show');
+        }, 200);
     }
 
     function animateSection() {
