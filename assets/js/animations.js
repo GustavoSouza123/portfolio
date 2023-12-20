@@ -12,6 +12,10 @@ $(window).on('load', function() {
     }
 
     // functions to animate dom elements
+    function animateHeader() {
+        $('header').addClass('show');
+    }
+
     function animateSection() {
         $('section').each(function() {
             let section = $(this);
@@ -40,12 +44,14 @@ $(window).on('load', function() {
     }
 
     // animations on window loading
+    animateHeader();
     animateSection();
     animateProjects();
     animateBlogPosts();
 
     // animations on scroll
     $(window).scroll(function() {
+        animateHeader();
         animateSection();
         animateProjects();
         animateBlogPosts();

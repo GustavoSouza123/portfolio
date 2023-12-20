@@ -10,7 +10,6 @@ header {
     padding: 0 3%;
     position: fixed;
     z-index: 999;
-    transition: height .2s;
 }
 
 header.scroll {
