@@ -41,8 +41,17 @@ $(window).on('load', function() {
         for(let i = 0; i < post.length; i++) {
             setTimeout(function() {
                 animate(post.eq(i)); 
-            }, 500+(300*i));
+            }, 500+(200*i));
         }
+    }
+
+    function animateArticle() {
+        setTimeout(function() {
+            animate($('main.article .title').eq(0));
+            animate($('main.article .thumbnail'));
+            animate($('main.article .post-info'));
+            animate($('main.article .post'));
+        }, 200)
     }
 
     // animations on window loading
@@ -50,6 +59,7 @@ $(window).on('load', function() {
     animateSection();
     animateProjects();
     animateBlogPosts();
+    animateArticle();
 
     // animations on scroll
     $(window).scroll(function() {
@@ -57,5 +67,6 @@ $(window).on('load', function() {
         animateSection();
         animateProjects();
         animateBlogPosts();
+        animateArticle();
     })
 })

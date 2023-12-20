@@ -1,3 +1,11 @@
+/* header */
+header {
+    opacity: 0;
+    transform: translateY(-70px);
+    transition: height .2s, opacity .5s, transform .5s;
+}
+
+/* sections and individual components */
 section,
 section:nth-child(3) .projects .project,
 .posts .post {
@@ -6,12 +14,26 @@ section:nth-child(3) .projects .project,
     transition: box-shadow .2s, opacity .5s, transform .5s;
 }
 
-header {
+/* article */
+main.article .title {
     opacity: 0;
-    transform: translateY(-70px);
-    transition: height .2s, transform .5s;
+    transform: translateX(-50px);
+    transition: opacity .5s, transform .5s;
 }
 
+main.article .thumbnail,
+main.article .post-info {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity .5s, transform .5s;
+}
+
+main.article .post {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+/* applying animations */
 .show {
     opacity: 1 !important;
     transform: translateX(0) !important;
