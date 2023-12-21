@@ -18,6 +18,7 @@
 
     "section3Title": "Meus Projetos",
     "articlePreview": "Este é o meu primeiro desafio da Frontend Mentor.",
+    "photoGallery": "Uma simples galeria de fotos responsiva com upload assíncrono de arquivos, fotos agrupadas por data (igual ao Google Fotos) e um painel de controle. Para a visualização das fotos utilizei um plugin JavaScript chamado Fancybox.",
 
     "section4Title": "Meu Blog",
     "section4SeeAll": "Ver todos os posts",

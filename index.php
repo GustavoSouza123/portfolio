@@ -114,6 +114,31 @@
                     <!-- project 1 -->
                     <div class="project">
                         <div class="info">
+                            <div class="title">Photo gallery</div>
+                            <div class="description">
+                                <p><?= $content->photoGallery ?></p>                                    
+                            </div>
+                            <div class="bottom">
+                                <div class="technologies">
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/html.svg" alt="HMTL logo" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/css.svg" alt="CSS logo" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/js.svg" alt="JavaScript logo" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/php.svg" alt="PHP logo" class="php" />
+                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/fancyapps.svg" alt="Fancyapps logo" class="fancyapps" />
+                                </div>
+                                <div class="links">
+                                    <a href="https://gustavo-souza.com/photo-gallery/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live link" />Live</a>
+                                    <a href="https://github.com/GustavoSouza123/photo-gallery/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source link" />Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <a href="https://gustavo-souza.com/photo-gallery/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/photo-gallery-print.jpg" alt="Article preview component project image" /></a>
+                        </div>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="project">
+                        <div class="info">
                             <div class="title">Article preview component</div>
                             <div class="description">
                                 <p><?= $content->articlePreview ?></p>                                    
@@ -135,7 +160,7 @@
                         </div>
                     </div>
                     <!-- boilerplate projecs -->
-                    <?php for($i = 0; $i < 2; $i++) { ?>
+                    <?php for($i = 0; $i < 1; $i++) { ?>
                     <div class="project">
                         <div class="info">
                             <div class="title">My first project</div>
