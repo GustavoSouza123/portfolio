@@ -56,7 +56,7 @@ $(window).on('load', function() {
 
     // animations on window loading
     animateHeader();
-    animateSection();
+    setTimeout(function() { animateSection(); }, 500);
     animateProjects();
     animateBlogPosts();
     animateArticle();
