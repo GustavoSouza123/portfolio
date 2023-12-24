@@ -32,7 +32,7 @@ $(window).on('load', function() {
         for(let i = 0; i < project.length; i++) {
             setTimeout(function() {
                 animate(project.eq(i));
-            }, 500);
+            }, 200);
         }
     }
 
@@ -41,7 +41,7 @@ $(window).on('load', function() {
         for(let i = 0; i < post.length; i++) {
             setTimeout(function() {
                 animate(post.eq(i)); 
-            }, 500+(200*i));
+            }, 200);
         }
     }
 
@@ -55,7 +55,7 @@ $(window).on('load', function() {
     }
 
     // animations on window loading
-    animateHeader();
+    setTimeout(function() { animateHeader(); }, 200);
     setTimeout(function() { animateSection(); }, 500);
     animateProjects();
     animateBlogPosts();

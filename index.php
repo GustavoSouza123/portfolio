@@ -190,7 +190,7 @@
         </section>
 
         <section id="<?= stripAccents($content->nav4) ?>">
-            <div class="content">
+            <div class="content featured">
                 <h1><?= $content->section4Title ?></h1>
                 <div class="posts">
                  <?php
