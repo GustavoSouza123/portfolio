@@ -15,15 +15,13 @@ $(window).on('load', function() {
     function animateHeader() {
         setTimeout(function() {
             $('header').addClass('show');
-        }, 200);
+        }, 300);
     }
 
     function animateSection() {
         $('section').each(function() {
             let section = $(this);
-            setTimeout(function() {
-                animate(section);
-            }, 200);
+            animate(section);
         })
     }
 
@@ -55,7 +53,7 @@ $(window).on('load', function() {
     }
 
     // animations on window loading
-    setTimeout(function() { animateHeader(); }, 200);
+    animateHeader();
     setTimeout(function() { animateSection(); }, 500);
     animateProjects();
     animateBlogPosts();
