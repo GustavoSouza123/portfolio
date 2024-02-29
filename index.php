@@ -32,7 +32,9 @@
             background: <?php if($theme == 'dark') echo '#222'; else echo '#fff'; ?>;
         }
     </style>
-    <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- google fonts api -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- google fonts api -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> <!-- Open Sans from google fonts api -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/style.css" /> <!-- main css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/header.css" /> <!-- header css file -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/footer.css" /> <!-- footer css file -->
