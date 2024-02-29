@@ -34,6 +34,5 @@
 
     "blogTitle": "My blog",
 
-    "articlePublished": "Published in",
-    "articleReadTime": "minute(s) read"
+    "articleReadTime": "min(s) read"
 }
