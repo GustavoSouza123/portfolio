@@ -33,7 +33,7 @@
 
 
     "blogTitle": "My blog",
-    "browseCategories": "Categories",
+    "allPosts": "All",
 
     "articleReadTime": "min(s) read"
 }
