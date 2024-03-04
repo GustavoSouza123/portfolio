@@ -403,6 +403,13 @@ section:nth-child(3) .projects .project .image img {
     gap: 40px;
 }
 
+.posts .no-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
 .posts .post {
     position: relative;
     width: 350px;
