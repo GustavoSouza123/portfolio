@@ -116,7 +116,10 @@
                     <!-- project 1 -->
                     <div class="project">
                         <div class="info">
-                            <div class="title">Photo gallery</div>
+                            <div class="top">
+                                <div class="title">Photo gallery</div>
+                                <img src="<?= INCLUDE_PATH ?>assets/images/info-<?= $theme ?>.svg" alt="More informations" />
+                            </div>
                             <div class="description">
                                 <p><?= $content->photoGallery ?></p>                                    
                             </div>

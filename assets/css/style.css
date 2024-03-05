@@ -318,9 +318,25 @@ section:nth-child(3) .projects .project .info > div:not(:last-child) {
     margin-bottom: 20px;
 }
 
-section:nth-child(3) .projects .project .info .title {
+section:nth-child(3) .projects .project .info .top {
+    display: flex;
+    align-items: center;
+}
+
+section:nth-child(3) .projects .project .info .top .title {
     font-size: 32px;
     font-weight: 600;
+}
+
+section:nth-child(3) .projects .project .info .top img {
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 24px;
+}
+
+section:nth-child(3) .projects .project:hover .info .top img {
+    animation: infoAnim 1.5s linear infinite;
 }
 
 section:nth-child(3) .projects .project .info .bottom {
@@ -570,6 +586,16 @@ section:nth-child(5) form input[type="submit"] {
     10% {bottom: 15px;}
     20% {bottom: 0;}
     30% {bottom: 5px;}
+    40% {bottom: 0;}
+    50% {bottom: 0;}
+    100% {bottom: 0;}
+}
+
+@keyframes infoAnim {
+    0% {bottom: 0;}
+    10% {bottom: 5px;}
+    20% {bottom: 0;}
+    30% {bottom: 2px;}
     40% {bottom: 0;}
     50% {bottom: 0;}
     100% {bottom: 0;}
