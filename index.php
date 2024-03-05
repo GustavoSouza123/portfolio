@@ -102,7 +102,7 @@
                     </div>
                     <div class="image">
                         <div class="image-container">
-                            <img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/me.png" alt="My photo" />
+                            <img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/me-<?= $theme ?>.png" alt="My photo" />
                         </div>
                     </div>
                 </div>
