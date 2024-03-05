@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Photo gallery",
+        "description": "photoGallery",
+        "technologies": ["html", "css", "js", "php", "fancyapps"],
+        "links": {
+            "live": "https://gustavo-souza.com/photo-gallery/",
+            "source": "https://github.com/GustavoSouza123/photo-gallery/"
+        },
+        "image": "photo-gallery-print.jpg"
+    },
+    {
+        "title": "Article preview component",
+        "description": "articlePreview",
+        "technologies": ["html", "css", "js"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/article-preview-component/",
+            "source": "https://github.com/GustavoSouza123/article-preview-component"
+        },
+        "image": "article-preview-component-print.jpg"
+    },
+    {
+        "title": "My first project",
+        "description": "",
+        "technologies": ["css", "css", "css", "css"],
+        "links": {
+            "live": "https://gustavo-souza.com/",
+            "source": "https://github.com/GustavoSouza123"
+        },
+        "image": "https://lipsum.app/id/13/1600x900"
+    }
+]

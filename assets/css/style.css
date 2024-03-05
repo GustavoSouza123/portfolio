@@ -323,7 +323,7 @@ section:nth-child(3) .projects .project .info .top {
     align-items: center;
 }
 
-section:nth-child(3) .projects .project .info .top .title {
+section:nth-child(3) .projects .project .info .title {
     font-size: 32px;
     font-weight: 600;
 }

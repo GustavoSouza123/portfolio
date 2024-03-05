@@ -113,8 +113,43 @@
             <div class="content">
                 <h1><?= $content->section3Title ?></h1>
                 <div class="projects">
+                    <?php
+                        $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
+                        $projects = json_decode($projectsJson);
+                        foreach($projects as $key => $project) {
+                            echo '
+                            <div class="project">
+                                <div class="info">
+                                    <div class="top">
+                                        <div class="title">'.$project->title.'</div>
+                                        <img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" />
+                                    </div>
+                                    <div class="description">
+                                        <p> '.$content->$$project->description.' </p> PAREI AQUI
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="technologies">
+                            ';
+                            foreach($project->technologies as $index => $tech) {
+                                echo '<img src="'.INCLUDE_PATH.'assets/images/technologies/'.$project->technologies[$index].'.svg" alt="'.$key.' logo" />';
+                            }
+                            echo '</div>';
+                            echo '<div class="links">
+                                            <a href="'.$project->links->live.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
+                                            <a href="'.$project->links->source.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/source-'.$theme.'.svg" alt="Source link" />Source</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="Article preview component project image" /></a>
+                                </div>
+                            </div>
+                            ';
+                        }
+                    ?>
+
                     <!-- project 1 -->
-                    <div class="project">
+                    <!-- <div class="project">
                         <div class="info">
                             <div class="top">
                                 <div class="title">Photo gallery</div>
@@ -140,9 +175,9 @@
                         <div class="image">
                             <a href="https://gustavo-souza.com/photo-gallery/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/photo-gallery-print.jpg" alt="Article preview component project image" /></a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- project 2 -->
-                    <div class="project">
+                    <!-- <div class="project">
                         <div class="info">
                             <div class="title">Article preview component</div>
                             <div class="description">
@@ -163,9 +198,9 @@
                         <div class="image">
                             <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" /></a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- boilerplate projecs -->
-                    <?php for($i = 0; $i < 1; $i++) { ?>
+                    <!-- <?php for($i = 0; $i < 1; $i++) { ?>
                     <div class="project">
                         <div class="info">
                             <div class="title">My first project</div>
@@ -189,7 +224,7 @@
                             <img loading="lazy" src="https://lipsum.app/id/13/1600x900" alt="Project image" />
                         </div>
                     </div>
-                    <?php } ?>
+                    <?php } ?> -->
                 </div>
             </div>
         </section>
