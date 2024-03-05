@@ -223,7 +223,7 @@ section:nth-child(1) .info .buttons > button {
     cursor: pointer;
     border: none;
     outline: none;
-    font-family: 'Segoe UI'; 
+    font-family: "Open Sans", sans-serif;
 }
 
 section:nth-child(1) .info .buttons > button:focus {
@@ -530,7 +530,7 @@ section:nth-child(5) form {
 
 section:nth-child(5) form input:not([type="submit"]),
 section:nth-child(5) form textarea {
-    font-family: 'Segoe UI'; 
+    font-family: "Open Sans", sans-serif;
     width: 95%;
     max-width: 400px;
     background: transparent;
@@ -566,7 +566,7 @@ section:nth-child(5) form textarea::placeholder {
 }
 
 section:nth-child(5) form input[type="submit"] {
-    font-family: 'Segoe UI'; 
+    font-family: "Open Sans", sans-serif;
     width: 150px;
     height: 40px;
     background-color: var(--submit-bg);
@@ -582,9 +582,33 @@ section:nth-child(5) form input[type="submit"] {
 
 /* project page */
 
-main.project .content {
-    padding: 20px 3%;
+main.project {
+    width: 100%;
+    min-height: calc(50vh - 50px);
+    display: flex;
+    align-items: center;
+    padding: 3%;
 }
+
+main.project .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    padding: 20px 0;
+}
+
+main.project h1 {}
+
+main.project .image img {
+    width: 100%;
+    max-width: 1280px;
+}
+
+main.project .description {}
+
+main.project .technologies {}
 
 /* animations */
 

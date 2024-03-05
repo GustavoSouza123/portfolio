@@ -50,7 +50,7 @@
                                     <a href="project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
                                 </div>
                                 <div class="description">
-                                    <p> '.$descriptions[$key].' </p>
+                                    <p>'.$descriptions[$key].'</p>
                                 </div>
                                 <div class="bottom">
                                     <div class="technologies">
@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="image">
-                                <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="Article preview component project image" /></a>
+                                <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
                             </div>
                         </div>
                         ';
