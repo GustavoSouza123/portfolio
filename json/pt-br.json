@@ -17,8 +17,9 @@
     "about": "<p>Meu nome é Gustavo. Sou um estudante de desenvolvimento de sistemas de São Paulo, Brasil. Tive meu primeiro contato com programação aos 13 anos de idade através de vídeos e tutoriais, e desde o meu primeiro curso de lógica de programação, eu sabia que eu queria continuar aprendendo cada vez mais sobre computadores.</p><p>Desde então, meu interesse por tecnologia só aumenta. Busco constantemente expandir meu conhecimento sobre programação. Por isso, desenvolvo projetos pessoais e escrevo em meu blog sobre as tecnologias que estudo.</p><p>Além dos computadores, também gosto muito de aprender idiomas. Nos últimos 3 anos, tenho estudado inglês e alemão, e não pretendo parar de estudar idiomas.</p>",
 
     "section3Title": "Meus Projetos",
-    "articlePreview": "Este é o meu primeiro desafio da Frontend Mentor.",
     "photoGallery": "Uma simples galeria de fotos responsiva com upload assíncrono de arquivos, fotos agrupadas por data (igual ao Google Fotos) e um painel de controle. Para a visualização das fotos utilizei um plugin JavaScript chamado Fancybox.",
+    "articlePreview": "Este é o meu primeiro desafio da Frontend Mentor.",
+    "nftPreview": "Este é o meu segundo desafio da Frontend Mentor.",
 
     "section4Title": "Meu Blog",
     "section4SeeAll": "Ver todos os posts",

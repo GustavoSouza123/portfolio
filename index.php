@@ -132,7 +132,7 @@
                                         <div class="technologies">
                             ';
                             foreach($project->technologies as $index => $tech) {
-                                echo '<img src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
+                                echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
                             }
                             echo '</div>';
                             echo '<div class="links">
@@ -148,84 +148,6 @@
                             ';
                         }
                     ?>
-
-                    <!-- project 1 -->
-                    <!-- <div class="project">
-                        <div class="info">
-                            <div class="top">
-                                <div class="title">Photo gallery</div>
-                                <img src="<?= INCLUDE_PATH ?>assets/images/info-<?= $theme ?>.svg" alt="More informations" />
-                            </div>
-                            <div class="description">
-                                <p><?= $content->photoGallery ?></p>                                    
-                            </div>
-                            <div class="bottom">
-                                <div class="technologies">
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/html.svg" alt="HMTL logo" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/css.svg" alt="CSS logo" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/js.svg" alt="JavaScript logo" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/php.svg" alt="PHP logo" class="php" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/fancyapps.svg" alt="Fancyapps logo" class="fancyapps" />
-                                </div>
-                                <div class="links">
-                                    <a href="https://gustavo-souza.com/photo-gallery/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live link" />Live</a>
-                                    <a href="https://github.com/GustavoSouza123/photo-gallery/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source link" />Source</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="https://gustavo-souza.com/photo-gallery/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/photo-gallery-print.jpg" alt="Article preview component project image" /></a>
-                        </div>
-                    </div> -->
-                    <!-- project 2 -->
-                    <!-- <div class="project">
-                        <div class="info">
-                            <div class="title">Article preview component</div>
-                            <div class="description">
-                                <p><?= $content->articlePreview ?></p>                                    
-                            </div>
-                            <div class="bottom">
-                                <div class="technologies">
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/html.svg" alt="HMTL logo" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/css.svg" alt="CSS logo" />
-                                    <img src="<?= INCLUDE_PATH ?>assets/images/technologies/js.svg" alt="JavaScript logo" />
-                                </div>
-                                <div class="links">
-                                    <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live link" />Live</a>
-                                    <a href="https://github.com/GustavoSouza123/article-preview-component" target="_blank"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source link" />Source</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="https://gustavosouza123.github.io/article-preview-component/" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH ?>assets/images/projects/article-preview-component-print.jpg" alt="Article preview component project image" /></a>
-                        </div>
-                    </div> -->
-                    <!-- boilerplate projecs -->
-                    <!-- <?php for($i = 0; $i < 1; $i++) { ?>
-                    <div class="project">
-                        <div class="info">
-                            <div class="title">My first project</div>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu accumsan velit, sit amet porta ipsum. Aenean sit amet est a quam ultricies tempor et ut mi.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="technologies">
-                                    <img src="assets/images/github-dark.svg" alt="Technology" />
-                                    <img src="assets/images/github-dark.svg" alt="Technology" />
-                                    <img src="assets/images/github-dark.svg" alt="Technology" />
-                                    <img src="assets/images/github-dark.svg" alt="Technology" />
-                                </div>
-                                <div class="links">
-                                    <a href=""><img src="<?= INCLUDE_PATH ?>assets/images/live-<?= $theme ?>.svg" alt="Live" />Live</a>
-                                    <a href="https://github.com/GustavoSouza123"><img src="<?= INCLUDE_PATH ?>assets/images/source-<?= $theme ?>.svg" alt="Source" />Source</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img loading="lazy" src="https://lipsum.app/id/13/1600x900" alt="Project image" />
-                        </div>
-                    </div>
-                    <?php } ?> -->
                 </div>
             </div>
         </section>

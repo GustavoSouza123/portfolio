@@ -356,8 +356,8 @@ section:nth-child(3) .projects .project .info .bottom .technologies {
 section:nth-child(3) .projects .project .info .bottom .technologies img {
     height: 32px;
     margin-right: 5px;
-    filter: grayscale(100%);
-    opacity: .5;
+    /* filter: grayscale(100%); */
+    /* opacity: .5; */
 }
 
 section:nth-child(3) .projects .project .info .bottom .technologies img.php {
@@ -401,6 +401,7 @@ section:nth-child(3) .projects .project .image {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    overflow: hidden;
 }
 
 section:nth-child(3) .projects .project .image img {

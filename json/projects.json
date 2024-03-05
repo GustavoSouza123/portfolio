@@ -22,11 +22,11 @@
     {
         "title": "My first project",
         "description": "",
-        "technologies": ["css", "css", "css", "css"],
+        "technologies": ["html", "css"],
         "links": {
-            "live": "https://gustavo-souza.com/",
-            "source": "https://github.com/GustavoSouza123"
+            "live": "https://gustavosouza123.github.io/nft-preview-card/",
+            "source": "https://github.com/GustavoSouza123/nft-preview-card"
         },
-        "image": "article-preview-component-print.jpg"
+        "image": "nft-preview-card-print.jpg"
     }
 ]
