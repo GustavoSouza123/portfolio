@@ -15,7 +15,7 @@ $(window).on('load', function() {
     function animateHeader() {
         setTimeout(function() {
             $('header').addClass('show');
-        }, 300);
+        }, 300)
     }
 
     function animateSection() {
@@ -30,7 +30,7 @@ $(window).on('load', function() {
         for(let i = 0; i < project.length; i++) {
             setTimeout(function() {
                 animate(project.eq(i));
-            }, 200);
+            }, 200)
         }
     }
 
@@ -39,7 +39,7 @@ $(window).on('load', function() {
         for(let i = 0; i < post.length; i++) {
             setTimeout(function() {
                 animate(post.eq(i)); 
-            }, 200);
+            }, 200)
         }
     }
 
@@ -48,7 +48,6 @@ $(window).on('load', function() {
             animate($('main.article .title').eq(0));
             animate($('main.article .thumbnail'));
             animate($('main.article .post-info'));
-            animate($('main.article .post'));
         }, 200)
     }
 
@@ -58,6 +57,11 @@ $(window).on('load', function() {
     animateProjects();
     animateBlogPosts();
     animateArticle();
+    
+    // animate post content as soon as page loads
+    setTimeout(function() {
+        $('main.article .post').addClass('show');
+    }, 300)
 
     // animations on scroll
     $(window).scroll(function() {
