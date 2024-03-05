@@ -34,6 +34,12 @@ $(window).on('load', function() {
         }
     }
 
+    function animateProjectPage() {
+        setTimeout(function() {
+            animate($('main.project'));
+        }, 300)
+    }
+
     function animateBlogPosts() {
         let post = $('.posts .post');
         for(let i = 0; i < post.length; i++) {
@@ -55,6 +61,7 @@ $(window).on('load', function() {
     animateHeader();
     setTimeout(function() { animateSection(); }, 500);
     animateProjects();
+    animateProjectPage()
     animateBlogPosts();
     animateArticle();
     

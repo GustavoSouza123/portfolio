@@ -14,6 +14,13 @@ section:nth-child(3) .projects .project,
     transition: box-shadow .2s, opacity .5s, transform .5s;
 }
 
+/* project page */
+main.project {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity .5s, transform .5s;
+}
+
 /* article */
 main.article .title {
     opacity: 0;
