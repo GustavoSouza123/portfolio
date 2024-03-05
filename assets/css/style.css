@@ -335,7 +335,7 @@ section:nth-child(3) .projects .project .info .top img {
     height: 24px;
 }
 
-section:nth-child(3) .projects .project:hover .info .top img {
+section:nth-child(3) .projects .project .info .top:hover img {
     animation: infoAnim 1.5s linear infinite;
 }
 
@@ -593,9 +593,9 @@ section:nth-child(5) form input[type="submit"] {
 
 @keyframes infoAnim {
     0% {bottom: 0;}
-    10% {bottom: 5px;}
+    10% {bottom: 7px;}
     20% {bottom: 0;}
-    30% {bottom: 2px;}
+    30% {bottom: 3px;}
     40% {bottom: 0;}
     50% {bottom: 0;}
     100% {bottom: 0;}

@@ -116,6 +116,7 @@
                     <?php
                         $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
                         $projects = json_decode($projectsJson);
+                        $descriptions = array($content->photoGallery, $content->articlePreview, '');
                         foreach($projects as $key => $project) {
                             echo '
                             <div class="project">
@@ -125,13 +126,13 @@
                                         <img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" />
                                     </div>
                                     <div class="description">
-                                        <p> '.$content->$$project->description.' </p> PAREI AQUI
+                                        <p> '.$descriptions[$key].' </p>
                                     </div>
                                     <div class="bottom">
                                         <div class="technologies">
                             ';
                             foreach($project->technologies as $index => $tech) {
-                                echo '<img src="'.INCLUDE_PATH.'assets/images/technologies/'.$project->technologies[$index].'.svg" alt="'.$key.' logo" />';
+                                echo '<img src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
                             }
                             echo '</div>';
                             echo '<div class="links">
