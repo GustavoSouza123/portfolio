@@ -47,7 +47,7 @@
                             <div class="info">
                                 <div class="top">
                                     <div class="title">'.$project->title.'</div>
-                                    <a href="project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
+                                    <a href="'.INCLUDE_PATH.'project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
                                 </div>
                                 <div class="description">
                                     <p>'.$descriptions[$key].'</p>
