@@ -3,7 +3,7 @@
     $projectId = isset($_GET['id']) ?$_GET['id'] : -1;
     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
     $projects = json_decode($projectsJson);
-    $descriptions = array($content->photoGallery, $content->articlePreview, '');
+    $descriptions = array($content->photoGallery, $content->articlePreview, $content->nftPreview);
 ?>
 
 <main class="project">
