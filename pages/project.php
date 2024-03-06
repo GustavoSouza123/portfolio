@@ -23,11 +23,18 @@
             <p><?= $descriptions[$projectId] ?></p>
         </div>
         <div class="technologies">
-        <?php
-            foreach($project->technologies as $index => $tech) {
-                echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
-            }
-        ?>
+            <p><?= $content->technologiesUsed ?></p>
+            <div class="images">
+                <?php
+                    foreach($project->technologies as $index => $tech) {
+                        echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
+                    }
+                ?>
+            </div>
+        </div>
+        <div class="links">
+            <a href="<?= $project->links->live ?>" target="_blank"><img src="<?= INCLUDE_PATH.'assets/images/live-'.$theme.'.svg' ?>" alt="Live link" />Live</a>
+            <a href="<?= $project->links->source ?>" target="_blank"><img src="<?= INCLUDE_PATH.'assets/images/source-'.$theme.'.svg' ?>" alt="Source link" />Source</a>
         </div>
 
         <?php } ?>

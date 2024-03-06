@@ -1,7 +1,7 @@
 [
     {
         "title": "Photo gallery",
-        "description": "photoGallery",
+        "description": "",
         "technologies": ["html", "css", "js", "php", "fancyapps"],
         "links": {
             "live": "https://gustavo-souza.com/photo-gallery/",
@@ -11,7 +11,7 @@
     },
     {
         "title": "Article preview component",
-        "description": "articlePreview",
+        "description": "",
         "technologies": ["html", "css", "js"],
         "links": {
             "live": "https://gustavosouza123.github.io/article-preview-component/",

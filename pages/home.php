@@ -40,7 +40,7 @@
                 <?php
                     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
                     $projects = json_decode($projectsJson);
-                    $descriptions = array($content->photoGallery, $content->articlePreview, '');
+                    $descriptions = array($content->photoGallery, $content->articlePreview, $content->nftPreview);
                     foreach($projects as $key => $project) {
                         echo '
                         <div class="project">
