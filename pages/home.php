@@ -73,6 +73,9 @@
                     }
                 ?>
             </div>
+            <div class="projects-link">
+                <a href="<?= INCLUDE_PATH ?>projects"><?= $content->section3SeeAll ?></a>
+            </div>
         </div>
     </section>
 

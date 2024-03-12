@@ -17,6 +17,7 @@
     "about": "<p>My name is Gustavo. I'm a systems development student from São Paulo, Brazil. I had my first contact with programming at the age of 13 through videos and tutorials, and since my first programming logic course, I knew that I wanted to continue learning more and more about computers.</p><p>Since then, my interest in technology only increases. I constantly seek to expand my knowledge about programming, which is why I develop personal projects and write on my blog about the technologies I study.</p><p>In addition to computers, I also really enjoy learning languages. For the last 3 years, I have been studying English and German, and I have no intention of stopping studying languages.</p>",
 
     "section3Title": "My Projects",
+    "section3SeeAll": "See all projects",
     "photoGallery": "A simple responsive photo gallery with asynchronous file upload, photos grouped by date (like in Google Photos) and an admin panel. For the photos visualization I used a JS plugin called Fancybox.",
     "articlePreview": "This is my first Frontent Mentor challenge.",
     "nftPreview": "This is my second Frontent Mentor challenge.",
