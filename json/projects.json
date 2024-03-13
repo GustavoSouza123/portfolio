@@ -1,17 +1,29 @@
 [
     {
         "title": "Photo gallery",
-        "description": "",
+        "description": {
+            "en": "A simple responsive photo gallery with asynchronous file upload and an admin panel.",
+            "pt-bt": "Uma simples galeria de fotos responsiva com upload assíncrono de arquivos e um painel de controle."
+        },
         "technologies": ["html", "css", "js", "php", "fancyapps"],
         "links": {
             "live": "https://gustavo-souza.com/photo-gallery/",
             "source": "https://github.com/GustavoSouza123/photo-gallery/"
         },
-        "image": "photo-gallery-print.jpg"
+        "image": "photo-gallery-print.jpg",
+        "details": {
+            "description": {
+                "en": "<p>A simple responsive photo gallery with asynchronous file upload, photos grouped by date (like in Google Photos) and an admin panel.</p><p>For the photos visualization I used a JS plugin called Fancybox.</p>",
+                "pt-br": "<p>Uma simples galeria de fotos responsiva com upload assíncrono de arquivos, fotos agrupadas por data (igual ao Google Fotos) e um painel de controle.</p><p>Para a visualização das fotos utilizei um plugin JavaScript chamado Fancybox.</p>"
+            }
+        }
     },
     {
         "title": "Article preview component",
-        "description": "",
+        "description": {
+            "en": "This is my first Frontent Mentor challenge.",
+            "pt-br": "Este é o meu primeiro desafio da Frontend Mentor."
+        },
         "technologies": ["html", "css", "js"],
         "links": {
             "live": "https://gustavosouza123.github.io/article-preview-component/",
@@ -21,7 +33,10 @@
     },
     {
         "title": "NFT preview card component",
-        "description": "",
+        "description": {
+            "en": "This is my second Frontent Mentor challenge.",
+            "pt-br": "Este é o meu segundo desafio da Frontend Mentor."
+        },
         "technologies": ["html", "css"],
         "links": {
             "live": "https://gustavosouza123.github.io/nft-preview-card/",

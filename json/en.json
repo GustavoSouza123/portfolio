@@ -18,9 +18,6 @@
 
     "section3Title": "My Projects",
     "section3SeeAll": "See all projects",
-    "photoGallery": "A simple responsive photo gallery with asynchronous file upload, photos grouped by date (like in Google Photos) and an admin panel. For the photos visualization I used a JS plugin called Fancybox.",
-    "articlePreview": "This is my first Frontent Mentor challenge.",
-    "nftPreview": "This is my second Frontent Mentor challenge.",
 
     "technologiesUsed": "Technologies used:",
 

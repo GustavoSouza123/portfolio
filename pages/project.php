@@ -3,7 +3,6 @@
     $projectId = isset($_GET['id']) ?$_GET['id'] : -1;
     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
     $projects = json_decode($projectsJson);
-    $descriptions = array($content->photoGallery, $content->articlePreview, $content->nftPreview);
 ?>
 
 <main class="project">
@@ -20,7 +19,7 @@
             <a href="<?= $project->links->live ?>" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH.'assets/images/projects/'.$project->image ?>" alt="<?= $project->title.' image' ?>" /></a>
         </div>
         <div class="description">
-            <p><?= $descriptions[$projectId] ?></p>
+            <?= $project->details->description->$activeLanguage ?>
         </div>
         <div class="technologies">
             <p><?= $content->technologiesUsed ?></p>

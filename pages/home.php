@@ -40,7 +40,6 @@
                 <?php
                     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
                     $projects = json_decode($projectsJson);
-                    $descriptions = array($content->photoGallery, $content->articlePreview, $content->nftPreview);
                     foreach($projects as $key => $project) {
                         echo '
                         <div class="project">
@@ -50,7 +49,7 @@
                                     <a href="'.INCLUDE_PATH.'project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
                                 </div>
                                 <div class="description">
-                                    <p>'.$descriptions[$key].'</p>
+                                    <p>'.$project->description->$activeLanguage.'</p>
                                 </div>
                                 <div class="bottom">
                                     <div class="technologies">
