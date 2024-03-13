@@ -1,9 +1,10 @@
 [
     {
+        "featured": "true",
         "title": "Photo gallery",
         "description": {
             "en": "A simple responsive photo gallery with asynchronous file upload and an admin panel.",
-            "pt-bt": "Uma simples galeria de fotos responsiva com upload assíncrono de arquivos e um painel de controle."
+            "pt-br": "Uma simples galeria de fotos responsiva com upload assíncrono de arquivos e um painel de controle."
         },
         "technologies": ["html", "css", "js", "php", "fancyapps"],
         "links": {
@@ -19,6 +20,7 @@
         }
     },
     {
+        "featured": "true",
         "title": "Article preview component",
         "description": {
             "en": "This is my first Frontent Mentor challenge.",
@@ -29,10 +31,17 @@
             "live": "https://gustavosouza123.github.io/article-preview-component/",
             "source": "https://github.com/GustavoSouza123/article-preview-component"
         },
-        "image": "article-preview-component-print.jpg"
+        "image": "article-preview-component-print.jpg",
+        "details": {
+            "description": {
+                "en": "<p>This is my first Frontent Mentor challenge.</p>",
+                "pt-br": "<p>Este é o meu primeiro desafio da Frontend Mentor.</p>"
+            }
+        }
     },
     {
-        "title": "NFT preview card component",
+        "featured": "true",
+        "title": "NFT card component",
         "description": {
             "en": "This is my second Frontent Mentor challenge.",
             "pt-br": "Este é o meu segundo desafio da Frontend Mentor."
@@ -42,6 +51,32 @@
             "live": "https://gustavosouza123.github.io/nft-preview-card/",
             "source": "https://github.com/GustavoSouza123/nft-preview-card"
         },
-        "image": "nft-preview-card-print.jpg"
+        "image": "nft-preview-card-print.jpg",
+        "details": {
+            "description": {
+                "en": "<p>This is my second Frontent Mentor challenge.</p>",
+                "pt-br": "<p>Este é o meu segundo desafio da Frontend Mentor.</p>"
+            }
+        }
+    },
+    {
+        "featured": "false",
+        "title": "Termo 2.0",
+        "description": {
+            "en": "A copy of the brazilian version of the online game \"Wordle\" with some additional features.",
+            "pt-br": "Uma cópia do jogo online \"Termo \" com alguns recursos adicionais."
+        },
+        "technologies": ["html", "css", "js"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/nft-preview-card/",
+            "source": "https://github.com/GustavoSouza123/termo-2.0"
+        },
+        "image": "termo.jpg",
+        "details": {
+            "description": {
+                "en": "<p>A copy of the brazilian version of the online game \"Wordle\" with some additional features.</p>",
+                "pt-br": "<p>Uma cópia do jogo online \"Termo \" com alguns recursos adicionais.</p>"
+            }
+        }
     }
 ]

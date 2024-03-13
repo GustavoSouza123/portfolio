@@ -41,34 +41,36 @@
                     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
                     $projects = json_decode($projectsJson);
                     foreach($projects as $key => $project) {
-                        echo '
-                        <div class="project">
-                            <div class="info">
-                                <div class="top">
-                                    <div class="title">'.$project->title.'</div>
-                                    <a href="'.INCLUDE_PATH.'project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
-                                </div>
-                                <div class="description">
-                                    <p>'.$project->description->$activeLanguage.'</p>
-                                </div>
-                                <div class="bottom">
-                                    <div class="technologies">
-                        ';
-                        foreach($project->technologies as $index => $tech) {
-                            echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
-                        }
-                        echo '</div>';
-                        echo '<div class="links">
-                                        <a href="'.$project->links->live.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
-                                        <a href="'.$project->links->source.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/source-'.$theme.'.svg" alt="Source link" />Source</a>
+                        if($project->featured === 'true') {
+                            echo '
+                            <div class="project">
+                                <div class="info">
+                                    <div class="top">
+                                        <div class="title">'.$project->title.'</div>
+                                        <a href="'.INCLUDE_PATH.'project?id='.$key.'"><img src="'.INCLUDE_PATH.'assets/images/info-'.$theme.'.svg" alt="More informations" /></a>
+                                    </div>
+                                    <div class="description">
+                                        <p>'.$project->description->$activeLanguage.'</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="technologies">
+                            ';
+                            foreach($project->technologies as $index => $tech) {
+                                echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
+                            }
+                            echo '</div>';
+                            echo '<div class="links">
+                                            <a href="'.$project->links->live.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
+                                            <a href="'.$project->links->source.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/source-'.$theme.'.svg" alt="Source link" />Source</a>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="image">
+                                    <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
+                                </div>
                             </div>
-                            <div class="image">
-                                <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
-                            </div>
-                        </div>
-                        ';
+                            ';
+                        }
                     }
                 ?>
             </div>
