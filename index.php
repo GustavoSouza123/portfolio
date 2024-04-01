@@ -24,6 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My portfolio website | Gustavo Souza"> <!-- seo -->
     <meta name="keywords" content="portfolio,website,tech,web,programming,coding"> <!-- seo -->
+    <meta name="google-adsense-account" content="ca-pub-7508322719547433"> <!-- google ads -->
     <link rel="icon" type="image/x-icon" href=""> <!-- website icon -->
     <!-- css -->
     <style>
@@ -41,6 +42,7 @@
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>assets/css/animations.css" /> <!-- animations css file -->
     <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!-- jQuery API -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7508322719547433" crossorigin="anonymous"></script> <!-- google ads -->
     <script>
         // page loading
         /*$(window).on('load', function() {
