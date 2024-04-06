@@ -20,7 +20,7 @@
         }
     },
     {
-        "featured": "true",
+        "featured": "false",
         "title": "Article preview component",
         "description": {
             "en": "This is my first Frontent Mentor challenge.",
@@ -76,6 +76,26 @@
             "description": {
                 "en": "<p>A copy of the brazilian version of the online game \"Wordle\" with some additional features.</p>",
                 "pt-br": "<p>Uma cópia do jogo online \"Termo \" com alguns recursos adicionais.</p>"
+            }
+        }
+    },
+    {
+        "featured": "true",
+        "title": "Tetris",
+        "description": {
+            "en": "A simple tetris game made with vanilla javascript, without frameworks.",
+            "pt-br": "Um jogo simples de tetris feito com javascript puro, sem frameworks."
+        },
+        "technologies": ["html", "css", "js"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/tetris/",
+            "source": "https://github.com/GustavoSouza123/tetris"
+        },
+        "image": "tetris.png",
+        "details": {
+            "description": {
+                "en": "<p>A simple tetris game made with vanilla javascript, without frameworks.</p>",
+                "pt-br": "<p>Um jogo simples de tetris feito com javascript puro, sem frameworks.</p>"
             }
         }
     }
