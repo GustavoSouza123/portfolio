@@ -60,7 +60,7 @@
         }
     },
     {
-        "featured": "true",
+        "featured": "false",
         "title": "Termo 2.0",
         "description": {
             "en": "A copy of the brazilian version of the online game \"Wordle\" with some additional features.",
@@ -96,6 +96,26 @@
             "description": {
                 "en": "<p>A simple tetris game made with vanilla javascript, without frameworks.</p>",
                 "pt-br": "<p>Um jogo simples de tetris feito com javascript puro, sem frameworks.</p>"
+            }
+        }
+    },
+    {
+        "featured": "true",
+        "title": "Advice generator",
+        "description": {
+            "en": "An advice generator app made with the Advice Slip JSON API.",
+            "pt-br": "Um gerador de conselhos feito com a API Advice Slip JSON."
+        },
+        "technologies": ["html", "css", "js"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/advice-generator/",
+            "source": "https://github.com/GustavoSouza123/advice-generator"
+        },
+        "image": "advice-generator-app.png",
+        "details": {
+            "description": {
+                "en": "<p>An advice generator app made with the Advice Slip JSON API.</p><p>This project was great for applying my skills in interacting with 3rd-party APIs. This project uses the Advice Slip API to generate random quotes of advice. It is a challenge from the Frontend Mentor platform.</p>",
+                "pt-br": "<p>Um gerador de conselhos feito com a API Advice Slip JSON.</p><p>Este projeto foi ótimo para aplicar minhas habilidades na interação com APIs. Este projeto usa a API Advice Slip para gerar citações aleatórias de conselhos. É um desafio da plataforma Frontend Mentor.</p>"
             }
         }
     }
