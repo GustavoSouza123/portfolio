@@ -80,7 +80,7 @@
         }
     },
     {
-        "featured": "true",
+        "featured": "false",
         "title": "Tetris",
         "description": {
             "en": "A simple tetris game made with vanilla javascript, without frameworks.",
@@ -116,6 +116,26 @@
             "description": {
                 "en": "<p>An advice generator app made with the Advice Slip JSON API.</p><p>This project was great for applying my skills in interacting with 3rd-party APIs. This project uses the Advice Slip API to generate random quotes of advice. It is a challenge from the Frontend Mentor platform.</p>",
                 "pt-br": "<p>Um gerador de conselhos feito com a API Advice Slip JSON.</p><p>Este projeto foi ótimo para aplicar minhas habilidades na interação com APIs. Este projeto usa a API Advice Slip para gerar citações aleatórias de conselhos. É um desafio da plataforma Frontend Mentor.</p>"
+            }
+        }
+    },
+    {
+        "featured": "true",
+        "title": "IP Address Tracker",
+        "description": {
+            "en": "An IP address tracker app made with React.",
+            "pt-br": "Um rastreador de endereços IP feito com React."
+        },
+        "technologies": ["html", "css", "js", "react", "vite"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/ip-address-tracker/",
+            "source": "https://github.com/GustavoSouza123/ip-address-tracker?tab=readme-ov-file"
+        },
+        "image": "ip-address-tracker.png",
+        "details": {
+            "description": {
+                "en": "<p>An IP address tracker app made with React.</p><p>In this app, the user can search for any IP addresses and see the key information and location.</p><p>For this project, I used the IP Geolocation API from Ipify to get the IP location details and the Google Maps API to display a map of the location of the IP address that was entered.</p><p>This is the first React app I built totally by myself, without tutorials.</p>",
+                "pt-br": "<p>Um rastreador de endereços IP feito com React.</p><p>Neste app, o usuário pode pesquisar qualquer endereço IP e ver as principais informações e localização.</p><p>Para este projeto, usei a API IP Geolocation do Ipify para obter os detalhes da localização do IP e a API do Google Maps para exibir um mapa da localização do endereço IP que foi inserido.</p><p>Este é o primeiro React app que desenvolvi totalmente sozinho, sem tutoriais.</p>"
             }
         }
     }
