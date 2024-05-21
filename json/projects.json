@@ -158,5 +158,25 @@
                 "pt-br": "<p>Uma ilustração de aplicativo de bate-papo feita com React.</p><p>Este projeto teve como objetivo testar minhas habilidades em CSS, já que tudo tem que ser escrito em CSS, exceto algumas imagens.</p>"
             }
         }
+    },
+    {
+        "featured": "true",
+        "title": "Interactive rating component",
+        "description": {
+            "en": "An interactive rating component made with React and Tailwind CSS.",
+            "pt-br": "Um componente de classificação interativo feito com React e Tailwind CSS."
+        },
+        "technologies": ["html", "css", "js", "react", "tailwind", "vite"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/interactive-rating-component/",
+            "source": "https://github.com/GustavoSouza123/interactive-rating-component/"
+        },
+        "image": "interactive-rating-component.png",
+        "details": {
+            "description": {
+                "en": "<p>An interactive rating component made with React and Tailwind CSS.</p><p>Something I've wanted to do for a while was to use some tool to facilitate my css coding. In this project I used Tailwind CSS, and I really felt the difference between having to write tons of CSS and simply writing CSS as classnames directly in the HTML. Also, I'm getting more and more comfortable working with React and NPM.</p>",
+                "pt-br": "<p>Um componente de classificação interativo feito com React e Tailwind CSS.</p><p>Algo que eu queria fazer há algum tempo era usar alguma ferramenta para facilitar o CSS. Nesse projeto usei Tailwind CSS e realmente senti a diferença entre ter que escrever linhas e linhas de CSS e simplesmente escrever CSS como nomes de classes diretamente no HTML. Além disso, estou cada vez mais confortável em trabalhar com React e NPM.</p>"
+            }
+        }
     }
 ]

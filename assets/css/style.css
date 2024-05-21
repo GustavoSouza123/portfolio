@@ -361,11 +361,19 @@ section:nth-child(3) .projects .project .info .bottom .technologies img {
 }
 
 section:nth-child(3) .projects .project .info .bottom .technologies img.php {
-    height: 40px;
+    height: 48px;
 }
 
 section:nth-child(3) .projects .project .info .bottom .technologies img.fancyapps {
     height: 28px;
+}
+
+section:nth-child(3) .projects .project .info .bottom .technologies img.vite {
+    height: 28px;
+}
+
+section:nth-child(3) .projects .project .info .bottom .technologies img.tailwind {
+    height: 24px;
 }
 
 section:nth-child(3) .projects .project .info .bottom .links {
