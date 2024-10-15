@@ -208,7 +208,7 @@
         },
         "technologies": ["html", "css", "js", "react", "tailwind", "vite", "node", "mysql"],
         "links": {
-            "live": "https://gustavo-souza.com/quote-repository/",
+            "live": "https://quote-repository.vercel.app/",
             "source": "https://github.com/GustavoSouza123/quote-repository"
         },
         "image": "quote-repository.png",
