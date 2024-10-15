@@ -351,7 +351,7 @@ section:nth-child(3) .projects .project .info .bottom > div:not(:last-child) {
 section:nth-child(3) .projects .project .info .bottom .technologies {
     display: flex;
     align-items: center;
-} 
+}
 
 section:nth-child(3) .projects .project .info .bottom .technologies img {
     height: 32px;
@@ -727,10 +727,12 @@ main.project .technologies p {
 main.project .technologies .images {
     display: flex;
     align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
 }
 
 main.project .technologies .images img {
-    height: 64px;
+    max-width: 64px;
     margin-right: 5px;
     /* filter: grayscale(100%); */
     /* opacity: .5; */
