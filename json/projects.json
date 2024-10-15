@@ -180,7 +180,7 @@
         }
     },
     {
-        "featured": "true",
+        "featured": "false",
         "title": "Job listings with filtering",
         "description": {
             "en": "A job listings with filtering app made with React and Tailwind CSS.",
@@ -196,6 +196,26 @@
             "description": {
                 "en": "<p>A job listings with filtering app made with React and Tailwind CSS.</p>",
                 "pt-br": "<p>Um aplicativo de listas de empregos com filtragem feito com React e Tailwind CSS.</p>"
+            }
+        }
+    },
+    {
+        "featured": "true",
+        "title": "Quote repository",
+        "description": {
+            "en": "A Node.js and MySQL app to store quotes and other notes.",
+            "pt-br": "Um app Node.js e MySQL para armazenar citações e outros textos."
+        },
+        "technologies": ["html", "css", "js", "react", "tailwind", "vite", "node", "mysql"],
+        "links": {
+            "live": "https://gustavo-souza.com/quote-repository/",
+            "source": "https://github.com/GustavoSouza123/quote-repository"
+        },
+        "image": "quote-repository.png",
+        "details": {
+            "description": {
+                "en": "<p>A Node.js and MySQL app to store quotes and other notes.</p>",
+                "pt-br": "<p>Um app Node.js e MySQL para armazenar citações e outros textos.</p>"
             }
         }
     }
