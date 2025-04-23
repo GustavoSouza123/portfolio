@@ -16,9 +16,22 @@
         ?>
 
         <h1><?= $project->title ?></h1>
-        <div class="image">
+		<?php
+			if($project->title === 'PauloFreire.ai') {
+		?>
+		<video loop="true" autoplay="autoplay" controls muted>
+			<source src="assets/images/projects/paulofreire-ai.mp4#t=39,272" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<?php
+			} else {
+		?>
+		<div class="image">
             <a href="<?= $project->links->live ?>" target="<?= $target ?>"><img loading="lazy" src="<?= INCLUDE_PATH.'assets/images/projects/'.$project->image ?>" alt="<?= $project->title.' image' ?>" /></a>
         </div>
+		<?php
+			}
+		?>
         <div class="description">
             <?= $project->details->description->$activeLanguage ?>
         </div>

@@ -696,7 +696,7 @@ main.projects .all-projects .project .title a {
 }
 
 main.projects .all-projects .project .description {
-    text-align: center;
+	text-align: center;
     padding: 0 20px;
 }
 
@@ -705,6 +705,11 @@ main.projects .all-projects .project .description {
 
 main.project .image img {
     width: 100%;
+}
+
+main.project video {
+	max-width: 100%;
+	height: auto;
 }
 
 main.project .description {
