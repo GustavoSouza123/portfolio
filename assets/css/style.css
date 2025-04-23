@@ -642,7 +642,10 @@ main.projects .content {
 }
 
 main.project .content {
-    max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    max-width: 900px;
 	font-size: 18px;
 	line-height: 32px;
 }
@@ -702,10 +705,11 @@ main.projects .all-projects .project .description {
 
 main.project .image img {
     width: 100%;
-    max-width: 700px;
 }
 
 main.project .description {
+	width: 100%;
+	max-width: 700px;
     margin: 30px 0;
 }
 
@@ -718,6 +722,8 @@ main.project .description p:last-child {
 }
 
 main.project .technologies {
+	width: 100%;
+	max-width: 700px;
     display: flex;
     flex-direction: column;
 }
