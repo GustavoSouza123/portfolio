@@ -719,7 +719,7 @@ main.project .description {
 }
 
 main.project .description p {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 main.project .description p:last-child {
