@@ -73,7 +73,7 @@ html.dark {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
     background-color: var(--body-bg);
@@ -223,7 +223,7 @@ section:nth-child(1) .info .buttons > button {
     cursor: pointer;
     border: none;
     outline: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 section:nth-child(1) .info .buttons > button:focus {
@@ -566,7 +566,7 @@ section:nth-child(5) form {
 
 section:nth-child(5) form input:not([type="submit"]),
 section:nth-child(5) form textarea {
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 95%;
     max-width: 400px;
     background: transparent;
@@ -602,7 +602,7 @@ section:nth-child(5) form textarea::placeholder {
 }
 
 section:nth-child(5) form input[type="submit"] {
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 150px;
     height: 40px;
     background-color: var(--submit-bg);
@@ -643,13 +643,15 @@ main.projects .content {
 
 main.project .content {
     max-width: 700px;
+	font-size: 18px;
+	line-height: 32px;
 }
 
 main.projects h1,
 main.project h1 {
     font-weight: 600;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -741,6 +743,7 @@ main.project .technologies .images img {
 main.project .links {
     display: flex;
     margin-top: 30px;
+	font-size: 16px;
 }
 
 main.project .links a {

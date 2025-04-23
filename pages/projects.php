@@ -10,10 +10,11 @@
         <div class="all-projects">
             <?php
             foreach($projects as $key => $project) {
+				$target = $project->links->live !== '' ? '_blank' : '';
                 echo '
                 <div class="project">
                     <div class="image">
-                    <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
+                    <a href="'.$project->links->live.'" target="'.$target.'"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
                     </div>
                     <div class="title"><a href="'.INCLUDE_PATH.'project?id='.$key.'">'.$project->title.'</a></div>
                     <div class="description">'.$project->description->$activeLanguage.'</div>

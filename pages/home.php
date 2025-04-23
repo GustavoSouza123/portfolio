@@ -41,6 +41,7 @@
                     $projectsJson = file_get_contents(INCLUDE_PATH.'json/projects.json');
                     $projects = json_decode($projectsJson);
                     foreach($projects as $key => $project) {
+						$target = $project->links->live !== '' ? '_blank' : '';
                         if($project->featured === 'true') {
                             echo '
                             <div class="project">
@@ -60,13 +61,13 @@
                             }
                             echo '</div>';
                             echo '<div class="links">
-                                            <a href="'.$project->links->live.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
+                                            <a href="'.$project->links->live.'" target="'.$target.'"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
                                             <a href="'.$project->links->source.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/source-'.$theme.'.svg" alt="Source link" />Source</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="image">
-                                    <a href="'.$project->links->live.'" target="_blank"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
+                                    <a href="'.$project->links->live.'" target="'.$target.'"><img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" /></a>
                                 </div>
                             </div>
                             ';

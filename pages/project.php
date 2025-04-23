@@ -12,11 +12,12 @@
                 echo 'Nenhum projeto encontrado';
             } else {
                 $project = $projects[$projectId];
+				$target = $project->links->live !== '' ? '_blank' : '';
         ?>
 
         <h1><?= $project->title ?></h1>
         <div class="image">
-            <a href="<?= $project->links->live ?>" target="_blank"><img loading="lazy" src="<?= INCLUDE_PATH.'assets/images/projects/'.$project->image ?>" alt="<?= $project->title.' image' ?>" /></a>
+            <a href="<?= $project->links->live ?>" target="<?= $target ?>"><img loading="lazy" src="<?= INCLUDE_PATH.'assets/images/projects/'.$project->image ?>" alt="<?= $project->title.' image' ?>" /></a>
         </div>
         <div class="description">
             <?= $project->details->description->$activeLanguage ?>
@@ -32,7 +33,7 @@
             </div>
         </div>
         <div class="links">
-            <a href="<?= $project->links->live ?>" target="_blank"><img src="<?= INCLUDE_PATH.'assets/images/live-'.$theme.'.svg' ?>" alt="Live link" />Live</a>
+            <a href="<?= $project->links->live ?>" target="<?= $target ?>"><img src="<?= INCLUDE_PATH.'assets/images/live-'.$theme.'.svg' ?>" alt="Live link" />Live</a>
             <a href="<?= $project->links->source ?>" target="_blank"><img src="<?= INCLUDE_PATH.'assets/images/source-'.$theme.'.svg' ?>" alt="Source link" />Source</a>
         </div>
 
