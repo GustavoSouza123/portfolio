@@ -238,5 +238,85 @@
                 "pt-br": "<p>Um jogo simples de tetris feito com javascript puro, sem frameworks.</p>"
             }
         }
+    },
+    {
+        "featured": "false",
+        "title": "Google clone",
+        "description": {
+            "en": "A clone of the Google Search website",
+            "pt-br": "Um clone do site de pesquisa do Google"
+        },
+        "technologies": ["html", "css"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/google/",
+            "source": "https://github.com/GustavoSouza123/google"
+        },
+        "image": "google.png",
+        "details": {
+            "description": {
+                "en": "<p>A clone of the Google Search website made with HTML and CSS</p><p>This was one of the first websites I built on my first HTML and CSS course, back in 2021</p>",
+                "pt-br": "<p>Um clone do site de Pesquisa do Google feito com HTML e CSS</p><p>Este foi um dos primeiros sites que criei no meu primeiro curso de HTML e CSS, em 2021</p>"
+            }
+        }
+    },
+    {
+        "featured": "false",
+        "title": "Starbucks clone",
+        "description": {
+            "en": "A clone of the Starbucks landing page",
+            "pt-br": "Um clone da landing page do Starbucks"
+        },
+        "technologies": ["html", "css"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/starbucks/",
+            "source": "https://github.com/GustavoSouza123/starbucks"
+        },
+        "image": "starbucks.png",
+        "details": {
+            "description": {
+                "en": "<p>A clone of the Starbucks landing page made with HTML and CSS</p><p>This was one of the first websites I built on my first HTML and CSS course, back in 2021</p>",
+                "pt-br": "<p>Um clone da landing page do Starbucks feito com HTML e CSS</p><p>Este foi um dos primeiros sites que criei no meu primeiro curso de HTML e CSS, em 2021</p>"
+            }
+        }
+    },
+    {
+        "featured": "false",
+        "title": "Medicenter clone",
+        "description": {
+            "en": "A clone of the Medicenter landing page",
+            "pt-br": "Um clone da landing page do Medicenter"
+        },
+        "technologies": ["html", "css"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/medicenter/",
+            "source": "https://github.com/GustavoSouza123/medicenter"
+        },
+        "image": "medicenter.png",
+        "details": {
+            "description": {
+                "en": "<p>A clone of the Medicenter landing page made with HTML and CSS</p><p>This was one of the first websites I built on my first HTML and CSS course, back in 2021</p>",
+                "pt-br": "<p>Um clone da landing page do Medicenter feito com HTML e CSS</p><p>Este foi um dos primeiros sites que criei no meu primeiro curso de HTML e CSS, em 2021</p>"
+            }
+        }
+    },
+    {
+        "featured": "false",
+        "title": "Awax",
+        "description": {
+            "en": "A simple landing page made with HTML and CSS",
+            "pt-br": "Uma landing page simples feita com HTML e CSS"
+        },
+        "technologies": ["html", "css"],
+        "links": {
+            "live": "https://gustavosouza123.github.io/awax/home.html",
+            "source": "https://github.com/GustavoSouza123/awax"
+        },
+        "image": "awax.png",
+        "details": {
+            "description": {
+                "en": "<p>A simple landing page made with HTML and CSS</p><p>This was one of the first websites I built on my first HTML and CSS course, back in 2021</p>",
+                "pt-br": "<p>Uma landing page simples feita com HTML e CSS</p><p>Este foi um dos primeiros sites que criei no meu primeiro curso de HTML e CSS, em 2021</p>"
+            }
+        }
     }
 ]

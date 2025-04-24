@@ -664,12 +664,12 @@ main.projects .all-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
 }
 
 main.projects .all-projects .project {
     width: 400px;
-    height: 340px;
+    min-height: 320px;
 }
 
 main.projects .all-projects .project .image {
@@ -686,7 +686,7 @@ main.projects .all-projects .project .image img {
 main.projects .all-projects .project .title {
     font-size: 24px;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -696,8 +696,9 @@ main.projects .all-projects .project .title a {
 }
 
 main.projects .all-projects .project .description {
+	min-height: 24px;
 	text-align: center;
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 
