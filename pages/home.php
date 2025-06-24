@@ -63,15 +63,12 @@
                                 echo '<img class="'.$tech.'" src="'.INCLUDE_PATH.'assets/images/technologies/'.$tech.'.svg" alt="'.$tech.' logo" />';
                             }
                             echo '</div>';
-                            echo '<div class="links">
-                                            <a style="opacity:'.$isLive.';pointer-events:'.$pointerEvents.';" href="'.$project->links->live.'" target="'.$target.'"><img src="'.INCLUDE_PATH.'assets/images/live-'.$theme.'.svg" alt="Live link" />Live</a>
-                                            <a href="'.$project->links->source.'" target="_blank"><img src="'.INCLUDE_PATH.'assets/images/source-'.$theme.'.svg" alt="Source link" />Source</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" />
-                                </div>
+                            echo '
+																</div>
+                              </div>
+															<div class="image">
+																	<img loading="lazy" src="'.INCLUDE_PATH.'assets/images/projects/'.$project->image.'" alt="'.$project->title.' image" />
+															</div>
                             </div>
                             ';
                         }
