@@ -10,7 +10,7 @@
         <div class="all-projects">
             <?php
             foreach($projects as $key => $project) {
-				$target = $project->links->live !== '' ? '_blank' : '';
+								$target = $project->links->live !== '' ? '_blank' : '';
                 echo '
                 <div class="project">
                     <div class="image">

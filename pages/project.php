@@ -12,7 +12,9 @@
                 echo 'Nenhum projeto encontrado';
             } else {
                 $project = $projects[$projectId];
-				$target = $project->links->live !== '' ? '_blank' : '';
+								$target = $project->links->live !== '' ? '_blank' : '';
+								$isLive = $project->links->live !== '' ? '1' : '0.3';
+								$pointerEvents = $project->links->live !== '' ? 'auto' : 'none';
         ?>
 
         <h1><?= $project->title ?></h1>
@@ -46,7 +48,7 @@
             </div>
         </div>
         <div class="links">
-            <a href="<?= $project->links->live ?>" target="<?= $target ?>"><img src="<?= INCLUDE_PATH.'assets/images/live-'.$theme.'.svg' ?>" alt="Live link" />Live</a>
+            <a style="opacity:<?= $isLive ?>;pointer-events:<?= $pointerEvents ?>;" href="<?= $project->links->live ?>" target="<?= $target ?>"><img src="<?= INCLUDE_PATH.'assets/images/live-'.$theme.'.svg' ?>" alt="Live link" />Live</a>
             <a href="<?= $project->links->source ?>" target="_blank"><img src="<?= INCLUDE_PATH.'assets/images/source-'.$theme.'.svg' ?>" alt="Source link" />Source</a>
         </div>
 
